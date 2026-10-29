@@ -1,0 +1,668 @@
+{
+  "organizations": [
+    {
+      "id": "org_pracpathways_001",
+      "name": "Practical Pathways",
+      "slug": "pracpathways",
+      "logo_url": "/logo.png",
+      "website": "https://pracpathways.com.au",
+      "default_timezone": "Asia/Karachi",
+      "default_currency": "PKR",
+      "email_sender_name": "Practical Pathways Admissions",
+      "email_sender_address": "info@pracpathways.com.au",
+      "reply_to_email": "info@pracpathways.com.au",
+      "round_robin_index": 0,
+      "auto_acknowledge_leads": true,
+      "notify_owners_new_lead": true,
+      "notify_agents_new_lead": true,
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "user_jawad_001",
+      "organization_id": "org_pracpathways_001",
+      "email": "muhammad.jawad@pracpathways.com.au",
+      "full_name": "Muhammad Jawad",
+      "phone": "+92 300 1112233",
+      "role": "owner",
+      "is_active": true,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Jawad",
+      "preferences": {
+        "theme": "dark",
+        "notifications": true
+      },
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "user_sohail_002",
+      "organization_id": "org_pracpathways_001",
+      "email": "sohail.sadiq@pracpathways.com.au",
+      "full_name": "Sohail Sadiq",
+      "phone": "+92 300 4445566",
+      "role": "owner",
+      "is_active": true,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sohail",
+      "preferences": {
+        "theme": "dark",
+        "notifications": true
+      },
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "user_ayesha_003",
+      "organization_id": "org_pracpathways_001",
+      "email": "ayesha.sohail@pracpathways.com.au",
+      "full_name": "Ayesha Sohail",
+      "phone": "+92 321 7778899",
+      "role": "agent",
+      "is_active": true,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ayesha",
+      "preferences": {
+        "theme": "light",
+        "notifications": true
+      },
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "user_maryam_004",
+      "organization_id": "org_pracpathways_001",
+      "email": "maryam.touqeer@pracpathways.com.au",
+      "full_name": "Maryam Touqeer",
+      "phone": "+92 333 1234987",
+      "role": "agent",
+      "is_active": true,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maryam",
+      "preferences": {
+        "theme": "light",
+        "notifications": true
+      },
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    }
+  ],
+  "invitations": [
+    {
+      "id": "invite_001",
+      "organization_id": "org_pracpathways_001",
+      "email": "muhammad.jawad@pracpathways.com.au",
+      "full_name": "Muhammad Jawad",
+      "role": "owner",
+      "token": "jawad-setup-token-98124",
+      "expires_at": "2026-10-27T08:59:42.832Z",
+      "accepted_at": "2026-10-20T08:59:42.832Z",
+      "invited_by": "user_jawad_001",
+      "created_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "invite_002",
+      "organization_id": "org_pracpathways_001",
+      "email": "sohail.sadiq@pracpathways.com.au",
+      "full_name": "Sohail Sadiq",
+      "role": "owner",
+      "token": "sohail-setup-token-74129",
+      "expires_at": "2026-10-27T08:59:42.832Z",
+      "accepted_at": "2026-10-20T08:59:42.832Z",
+      "invited_by": "user_jawad_001",
+      "created_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "invite_003",
+      "organization_id": "org_pracpathways_001",
+      "email": "ayesha.sohail@pracpathways.com.au",
+      "full_name": "Ayesha Sohail",
+      "role": "agent",
+      "token": "ayesha-setup-token-38102",
+      "expires_at": "2026-10-27T08:59:42.832Z",
+      "accepted_at": "2026-10-20T08:59:42.832Z",
+      "invited_by": "user_jawad_001",
+      "created_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "invite_004",
+      "organization_id": "org_pracpathways_001",
+      "email": "maryam.touqeer@pracpathways.com.au",
+      "full_name": "Maryam Touqeer",
+      "role": "agent",
+      "token": "maryam-setup-token-65912",
+      "expires_at": "2026-10-27T08:59:42.832Z",
+      "accepted_at": "2026-10-20T08:59:42.832Z",
+      "invited_by": "user_jawad_001",
+      "created_at": "2026-10-20T08:59:42.832Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "contact_001",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "Zubair Ahmed",
+      "email": "zubair.ahmed@example.com",
+      "email_normalized": "zubair.ahmed@example.com",
+      "phone_raw": "0301-4455667",
+      "phone_normalized": "+923014455667",
+      "company": "Vertex Tech Solutions",
+      "city": "Lahore",
+      "country": "Pakistan",
+      "tags": [
+        "Web Enquiry",
+        "Corporate Training",
+        "High Intent"
+      ],
+      "assigned_agent_id": "user_ayesha_003",
+      "lifecycle_status": "lead",
+      "first_enquiry_at": "2026-10-20T04:59:42.833Z",
+      "latest_enquiry_at": "2026-10-20T04:59:42.833Z",
+      "last_contacted_at": "2026-10-20T06:59:42.833Z",
+      "next_follow_up_at": "2026-10-20T10:59:42.833Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "communication_preferences": {
+        "email": true,
+        "phone": true,
+        "whatsapp": true
+      },
+      "conflict_flag": false,
+      "created_at": "2026-10-20T04:59:42.833Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "contact_002",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "Fatima Noor",
+      "email": "fatima.noor@outlook.com",
+      "email_normalized": "fatima.noor@outlook.com",
+      "phone_raw": "+92 334 9876543",
+      "phone_normalized": "+923349876543",
+      "company": "BioHealth Labs",
+      "city": "Karachi",
+      "country": "Pakistan",
+      "tags": [
+        "Meta Ad",
+        "Healthcare",
+        "Instagram Lead"
+      ],
+      "assigned_agent_id": "user_maryam_004",
+      "lifecycle_status": "lead",
+      "first_enquiry_at": "2026-10-20T00:59:42.833Z",
+      "latest_enquiry_at": "2026-10-20T00:59:42.833Z",
+      "next_follow_up_at": "2026-10-20T13:59:42.833Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "communication_preferences": {
+        "email": true,
+        "phone": true,
+        "whatsapp": true
+      },
+      "conflict_flag": false,
+      "created_at": "2026-10-20T00:59:42.833Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "contact_003",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "Usman Tariq",
+      "email": "usman.tariq@gmail.com",
+      "email_normalized": "usman.tariq@gmail.com",
+      "phone_raw": "0321-8899001",
+      "phone_normalized": "+923218899001",
+      "company": "Apex Logistics",
+      "city": "Islamabad",
+      "country": "Pakistan",
+      "tags": [
+        "Google Ad",
+        "Supply Chain",
+        "Proposal Sent"
+      ],
+      "assigned_agent_id": "user_ayesha_003",
+      "lifecycle_status": "contact",
+      "first_enquiry_at": "2026-10-18T08:59:42.833Z",
+      "latest_enquiry_at": "2026-10-19T08:59:42.833Z",
+      "last_contacted_at": "2026-10-19T20:59:42.833Z",
+      "next_follow_up_at": "2026-10-21T08:59:42.833Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "conflict_flag": false,
+      "created_at": "2026-10-18T08:59:42.833Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "contact_004",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "Hassan Raza",
+      "email": "hassan.raza@consulting.com",
+      "email_normalized": "hassan.raza@consulting.com",
+      "phone_raw": "0300-5544332",
+      "phone_normalized": "+923005544332",
+      "company": "Raza Management Group",
+      "city": "Faisalabad",
+      "country": "Pakistan",
+      "tags": [
+        "VIP Client",
+        "Executive Education",
+        "Won"
+      ],
+      "assigned_agent_id": "user_maryam_004",
+      "lifecycle_status": "customer",
+      "first_enquiry_at": "2026-10-15T08:59:42.833Z",
+      "latest_enquiry_at": "2026-10-17T08:59:42.833Z",
+      "last_contacted_at": "2026-10-19T08:59:42.833Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "conflict_flag": false,
+      "created_at": "2026-10-15T08:59:42.833Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    }
+  ],
+  "lead_submissions": [
+    {
+      "id": "lead_sub_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "capture_channel": "website",
+      "marketing_source": "google",
+      "provider": "website",
+      "form_id": "homepage_contact_form",
+      "utm_source": "google",
+      "utm_medium": "cpc",
+      "utm_campaign": "practical_pathways_q4_brand",
+      "gclid": "CjwKCAjw7p79BRAjEiwA9O1zG6...",
+      "landing_page": "https://pracpathways.com.au/courses/clinical-pathways",
+      "referrer": "https://www.google.com/",
+      "submitted_fields": {
+        "course_interest": "Professional Clinical Practice Program",
+        "qualification": "MBBS / BDS Graduate",
+        "message": "Interested in registration requirements and upcoming intake dates."
+      },
+      "consent_text": "I agree to be contacted via email, phone, and WhatsApp.",
+      "consent_timestamp": "2026-10-20T04:59:42.833Z",
+      "idempotency_key": "web_form_sub_zubair_01",
+      "is_test": false,
+      "submission_timestamp": "2026-10-20T04:59:42.833Z",
+      "processed_at": "2026-10-20T04:59:42.833Z",
+      "created_at": "2026-10-20T04:59:42.833Z"
+    },
+    {
+      "id": "lead_sub_002",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_002",
+      "capture_channel": "meta_ads",
+      "marketing_source": "meta",
+      "provider": "meta",
+      "provider_lead_id": "meta_lead_9921448821",
+      "form_id": "meta_instant_form_amc_prep",
+      "campaign_name": "Meta IG Leads AMC Prep November",
+      "campaign_id": "meta_camp_449911",
+      "fbclid": "IwAR0s_k94b92_test_fbclid",
+      "submitted_fields": {
+        "field_full_name": "Fatima Noor",
+        "field_email": "fatima.noor@outlook.com",
+        "field_phone": "+92 334 9876543",
+        "field_city": "Karachi",
+        "experience_years": "2 Years Hospital Residency"
+      },
+      "idempotency_key": "meta_lead_9921448821",
+      "is_test": false,
+      "submission_timestamp": "2026-10-20T00:59:42.833Z",
+      "processed_at": "2026-10-20T00:59:42.833Z",
+      "created_at": "2026-10-20T00:59:42.833Z"
+    },
+    {
+      "id": "lead_sub_003",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_003",
+      "capture_channel": "google_ads",
+      "marketing_source": "google",
+      "provider": "google",
+      "provider_lead_id": "google_lead_884102941",
+      "campaign_name": "Search - Professional Certification Pakistan",
+      "campaign_id": "google_camp_773322",
+      "submitted_fields": {
+        "user_column_EMAIL": "usman.tariq@gmail.com",
+        "user_column_FULL_NAME": "Usman Tariq",
+        "user_column_PHONE_NUMBER": "0321-8899001",
+        "user_column_COMPANY_NAME": "Apex Logistics"
+      },
+      "idempotency_key": "google_lead_884102941",
+      "is_test": false,
+      "submission_timestamp": "2026-10-18T08:59:42.833Z",
+      "processed_at": "2026-10-18T08:59:42.833Z",
+      "created_at": "2026-10-18T08:59:42.833Z"
+    }
+  ],
+  "deals": [
+    {
+      "id": "deal_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "assigned_agent_id": "user_ayesha_003",
+      "title": "Clinical Pathway Registration - Zubair Ahmed",
+      "stage": "qualified",
+      "value": 185000,
+      "currency": "PKR",
+      "expected_close_date": "2026-11-03",
+      "notes": "Lead qualified. Candidate has valid documents and ready to enroll.",
+      "created_at": "2026-10-20T06:59:42.833Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "deal_002",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_002",
+      "assigned_agent_id": "user_maryam_004",
+      "title": "AMC Prep Fast-Track - Fatima Noor",
+      "stage": "new_opportunity",
+      "value": 120000,
+      "currency": "PKR",
+      "expected_close_date": "2026-11-09",
+      "notes": "Inquired about batch schedule and installment plans.",
+      "created_at": "2026-10-20T02:59:42.833Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "deal_003",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_003",
+      "assigned_agent_id": "user_ayesha_003",
+      "title": "Corporate Training Batch - Apex Logistics",
+      "stage": "proposal_sent",
+      "value": 450000,
+      "currency": "PKR",
+      "expected_close_date": "2026-10-30",
+      "notes": "Sent customized proposal for 5 candidates.",
+      "created_at": "2026-10-19T08:59:42.833Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "deal_004",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_004",
+      "assigned_agent_id": "user_maryam_004",
+      "title": "Executive Healthcare Mentorship - Hassan Raza",
+      "stage": "won",
+      "value": 350000,
+      "currency": "PKR",
+      "expected_close_date": "2026-10-19",
+      "notes": "Contract signed and fee received in full via bank transfer.",
+      "created_at": "2026-10-16T08:59:42.833Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "deal_id": "deal_001",
+      "assigned_agent_id": "user_ayesha_003",
+      "title": "Callback to confirm intake document verification",
+      "description": "Check if candidate has uploaded graduation certificate.",
+      "due_date": "2026-10-20T10:59:42.833Z",
+      "priority": "high",
+      "status": "pending",
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "task_002",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_002",
+      "deal_id": "deal_002",
+      "assigned_agent_id": "user_maryam_004",
+      "title": "Initial intake call and schedule assessment interview",
+      "description": "Explain course outline and fee schedule.",
+      "due_date": "2026-10-20T13:59:42.833Z",
+      "priority": "urgent",
+      "status": "pending",
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "task_003",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_003",
+      "deal_id": "deal_003",
+      "assigned_agent_id": "user_ayesha_003",
+      "title": "Follow up on corporate proposal review",
+      "description": "Call HR director to address questions on quotation.",
+      "due_date": "2026-10-21T08:59:42.833Z",
+      "priority": "medium",
+      "status": "pending",
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    }
+  ],
+  "call_logs": [
+    {
+      "id": "call_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "agent_id": "user_ayesha_003",
+      "timestamp": "2026-10-20T06:59:42.833Z",
+      "outcome": "connected",
+      "duration_seconds": 245,
+      "notes": "Spoke with Zubair. Very enthusiastic about the practical pathways curriculum. Requested fee structure via WhatsApp.",
+      "next_action": "Send brochure and follow up in 2 hours",
+      "follow_up_date": "2026-10-20T10:59:42.833Z",
+      "created_at": "2026-10-20T06:59:42.833Z"
+    },
+    {
+      "id": "call_002",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_003",
+      "agent_id": "user_ayesha_003",
+      "timestamp": "2026-10-19T20:59:42.833Z",
+      "outcome": "interested",
+      "duration_seconds": 410,
+      "notes": "Discussed training scope for supply chain managers. Positive response.",
+      "next_action": "Email detailed syllabus",
+      "follow_up_date": "2026-10-21T08:59:42.833Z",
+      "created_at": "2026-10-19T20:59:42.833Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "author_id": "user_ayesha_003",
+      "content": "Candidate has 3 years of clinical experience. Good English fluency.",
+      "created_at": "2026-10-20T06:59:42.833Z",
+      "updated_at": "2026-10-20T06:59:42.833Z"
+    },
+    {
+      "id": "note_002",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_004",
+      "author_id": "user_maryam_004",
+      "content": "Full fee cleared via Allied Bank voucher #TX99120. Sent LMS access details.",
+      "created_at": "2026-10-19T08:59:42.833Z",
+      "updated_at": "2026-10-19T08:59:42.833Z"
+    }
+  ],
+  "email_templates": [
+    {
+      "id": "tpl_001",
+      "organization_id": "org_pracpathways_001",
+      "name": "Lead Enquiry Acknowledgement",
+      "slug": "welcome-acknowledgement",
+      "subject": "Thank you for your enquiry — Practical Pathways",
+      "body_html": "<div style=\"font-family: Arial, sans-serif; line-height: 1.6; color: #333;\">\n  <h2 style=\"color: #0A192F;\">Welcome to Practical Pathways</h2>\n  <p>Dear <strong>{{contact.name}}</strong>,</p>\n  <p>Thank you for submitting your enquiry to Practical Pathways. We have received your request regarding our programs.</p>\n  <p>One of our dedicated admissions advisors, <strong>{{agent.name}}</strong>, will contact you shortly to guide you through the process and answer any questions.</p>\n  <p>Best regards,<br><strong>Practical Pathways Admissions Team</strong><br>Email: info@pracpathways.com.au</p>\n  <hr style=\"border: none; border-top: 1px solid #eee; margin-top: 30px;\" />\n  <p style=\"font-size: 11px; color: #888;\">You are receiving this transactional confirmation because you submitted a form on our website. <a href=\"{{unsubscribe_url}}\" style=\"color: #888;\">Unsubscribe</a></p>\n</div>",
+      "body_text": "Thank you for contacting Practical Pathways. An advisor will contact you shortly.",
+      "variables": [
+        "contact.name",
+        "contact.email",
+        "agent.name",
+        "organization.name",
+        "unsubscribe_url"
+      ],
+      "is_system": true,
+      "is_active": true,
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "tpl_002",
+      "organization_id": "org_pracpathways_001",
+      "name": "Assigned Agent Lead Alert",
+      "slug": "agent-lead-alert",
+      "subject": "New Lead Assigned: {{contact.name}} ({{channel}})",
+      "body_html": "<div style=\"font-family: Arial, sans-serif;\">\n  <h3>New Lead Assignment</h3>\n  <p>Hi <strong>{{agent.name}}</strong>, a new enquiry has been assigned to you.</p>\n  <p><strong>Name:</strong> {{contact.name}}<br><strong>Phone:</strong> {{contact.phone}}<br><strong>Email:</strong> {{contact.email}}</p>\n  <p><a href=\"{{contact.crm_url}}\" style=\"background: #0D9488; color: white; padding: 10px 18px; text-decoration: none; border-radius: 6px;\">Open Record in Calling Workspace</a></p>\n</div>",
+      "body_text": "New lead assigned: {{contact.name}}. Please review in CRM.",
+      "variables": [
+        "agent.name",
+        "contact.name",
+        "contact.phone",
+        "contact.email",
+        "contact.crm_url",
+        "channel"
+      ],
+      "is_system": true,
+      "is_active": true,
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "tpl_003",
+      "organization_id": "org_pracpathways_001",
+      "name": "Follow-up Check-in",
+      "slug": "follow-up-checkin",
+      "subject": "Following up on your Practical Pathways enquiry",
+      "body_html": "<div style=\"font-family: Arial, sans-serif; line-height: 1.6;\">\n  <p>Hi {{contact.name}},</p>\n  <p>I hope you are doing well. I wanted to follow up regarding your enquiry with Practical Pathways.</p>\n  <p>Do you have any questions regarding the curriculum or intake schedule? Please let me know a convenient time for a quick 5-minute call.</p>\n  <p>Warm regards,<br>{{agent.name}}<br>Practical Pathways</p>\n</div>",
+      "body_text": "Following up on your Practical Pathways enquiry.",
+      "variables": [
+        "contact.name",
+        "agent.name"
+      ],
+      "is_system": false,
+      "is_active": true,
+      "created_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    }
+  ],
+  "email_messages": [
+    {
+      "id": "email_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "template_id": "tpl_001",
+      "recipient_email": "zubair.ahmed@example.com",
+      "subject": "Thank you for your enquiry — Practical Pathways",
+      "body_html": "Sent welcome acknowledgement email.",
+      "status": "delivered",
+      "provider_message_id": "resend_msg_8819247",
+      "sent_at": "2026-10-20T04:59:42.833Z",
+      "created_at": "2026-10-20T04:59:42.833Z"
+    }
+  ],
+  "job_queue": [],
+  "audit_events": [
+    {
+      "id": "audit_init_001",
+      "organization_id": "org_pracpathways_001",
+      "actor_id": "user_jawad_001",
+      "actor_name": "Muhammad Jawad",
+      "action": "system_initialized",
+      "target_type": "organization",
+      "target_id": "org_pracpathways_001",
+      "details": {
+        "message": "Practical Pathways CRM provisioned with initial organization structure and users."
+      },
+      "ip_address": "127.0.0.1",
+      "user_agent": "Initial Setup Script",
+      "created_at": "2026-10-20T08:59:42.832Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_001",
+      "organization_id": "org_pracpathways_001",
+      "user_id": "user_ayesha_003",
+      "title": "New Lead Assigned",
+      "message": "Zubair Ahmed has been assigned to you from Website Google Ads.",
+      "link": "/contacts/contact_001",
+      "is_read": false,
+      "type": "lead_assigned",
+      "created_at": "2026-10-20T04:59:42.833Z"
+    },
+    {
+      "id": "notif_002",
+      "organization_id": "org_pracpathways_001",
+      "user_id": "user_maryam_004",
+      "title": "New Lead Assigned",
+      "message": "Fatima Noor has been assigned to you from Meta Lead Ads.",
+      "link": "/contacts/contact_002",
+      "is_read": false,
+      "type": "lead_assigned",
+      "created_at": "2026-10-20T00:59:42.833Z"
+    }
+  ],
+  "integration_connections": [
+    {
+      "id": "conn_website",
+      "organization_id": "org_pracpathways_001",
+      "provider": "website_webhook",
+      "status": "connected_and_verified",
+      "credentials_encrypted": {
+        "webhook_secret": "whsec_pracpathways_web_2026"
+      },
+      "config": {
+        "allowed_origins": [
+          "https://pracpathways.com.au",
+          "http://localhost:3000"
+        ]
+      },
+      "last_verified_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "conn_meta",
+      "organization_id": "org_pracpathways_001",
+      "provider": "meta_ads",
+      "status": "configuration_incomplete",
+      "credentials_encrypted": {
+        "app_id": "9928172651",
+        "app_secret": "META_APP_SECRET_PLACEHOLDER"
+      },
+      "config": {
+        "verify_token": "meta_verify_pracpathways_secret_token"
+      },
+      "last_error": "Requires Meta Page Access Token with leads_retrieval permission.",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "conn_google",
+      "organization_id": "org_pracpathways_001",
+      "provider": "google_ads",
+      "status": "connected_and_verified",
+      "credentials_encrypted": {
+        "google_key": "google_lead_secret_key_pracpathways_2026"
+      },
+      "config": {
+        "webhook_url": "/api/webhooks/google-ads"
+      },
+      "last_verified_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    },
+    {
+      "id": "conn_email",
+      "organization_id": "org_pracpathways_001",
+      "provider": "email_provider",
+      "status": "connected_and_verified",
+      "credentials_encrypted": {
+        "provider_type": "mock_transactional_mailer"
+      },
+      "config": {
+        "sender_email": "info@pracpathways.com.au",
+        "sender_name": "Practical Pathways"
+      },
+      "last_verified_at": "2026-10-20T08:59:42.832Z",
+      "updated_at": "2026-10-20T08:59:42.832Z"
+    }
+  ],
+  "webhook_events": [],
+  "suppression_records": []
+}

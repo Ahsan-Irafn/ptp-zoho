@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Crm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Practical Training Pathways CRM" Version="1.2" AllowsCustomContactUrl="true">
+  <!-- Practical Training Pathways CRM - Official 3CX CRM Integration Template -->
+  <!-- Compatible with 3CX v18 and v20 Pro / Enterprise editions -->
+  <Number Prefix="AsIs" MaxLength="20" />
+  <Connection>
+    <Parameters>
+      <Parameter Name="CrmUrl" Type="String" Editor="String" Title="CRM Server URL" Default="https://crm.pracpathways.com.au" />
+      <Parameter Name="ApiKey" Type="String" Editor="String" Title="3CX Integration API Key (Bearer Token)" />
+    </Parameters>
+  </Connection>
+  <Scenarios>
+    <!-- Scenario 1: Contact Lookup on Incoming/Outgoing Call -->
+    <Scenario Id="LookupContact" Type="REST">
+      <Request Url="[CrmUrl]/api/integrations/3cx/lookup?number=[Number]&amp;extension=[AgentExtension]" RequestType="Get">
+        <Headers>
+          <Value Key="Authorization">Bearer [ApiKey]</Value>
+          <Value Key="Accept">application/json</Value>
+        </Headers>
+      </Request>
+      <Rules>
+        <Rule Type="Json">contacts</Rule>
+      </Rules>
+      <Variables>
+        <Variable Name="ContactId" Type="String">id</Variable>
+        <Variable Name="FirstName" Type="String">firstname</Variable>
+        <Variable Name="LastName" Type="String">lastname</Variable>
+        <Variable Name="Company" Type="String">company</Variable>
+        <Variable Name="Email" Type="String">email</Variable>
+        <Variable Name="PhoneBusiness" Type="String">phone</Variable>
+        <Variable Name="ContactUrl" Type="String">contact_url</Variable>
+      </Variables>
+      <Outputs AllowCreate="false" />
+    </Scenario>
+
+    <!-- Scenario 2: Call Journaling (Reports Call Duration, Outcome & Notes on Hangup) -->
+    <Scenario Id="ReportCall" Type="REST">
+      <Request Url="[CrmUrl]/api/integrations/3cx/journal" RequestType="Post">
+        <Headers>
+          <Value Key="Authorization">Bearer [ApiKey]</Value>
+          <Value Key="Content-Type">application/json</Value>
+        </Headers>
+        <Body>{"call_id":"[CallId]","call_type":"[CallType]","number":"[Number]","agent_extension":"[AgentExtension]","duration":[Duration],"call_start_time":"[CallStartTime]","call_end_time":"[CallEndTime]","status":"[CallStatus]","notes":"[Subject]"}</Body>
+      </Request>
+      <Rules>
+        <Rule Type="Json">success</Rule>
+      </Rules>
+    </Scenario>
+  </Scenarios>
+</Crm>

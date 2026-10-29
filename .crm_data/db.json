@@ -1,0 +1,1398 @@
+{
+  "organizations": [
+    {
+      "id": "org_pracpathways_001",
+      "name": "Practical Training Pathways",
+      "slug": "pracpathways",
+      "rto_code": "22256",
+      "logo_url": "https://www.pracpathways.com.au/wp-content/uploads/2026/02/logo-155-x-155.png",
+      "website": "https://www.pracpathways.com.au",
+      "default_timezone": "Australia/Adelaide",
+      "default_currency": "AUD",
+      "default_phone_country_code": "+61",
+      "email_sender_name": "Practical Training Pathways Admissions",
+      "email_sender_address": "info@pracpathways.com.au",
+      "reply_to_email": "info@pracpathways.com.au",
+      "round_robin_index": 0,
+      "auto_acknowledge_leads": true,
+      "notify_owners_new_lead": true,
+      "notify_agents_new_lead": true,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "user_jawad_001",
+      "organization_id": "org_pracpathways_001",
+      "email": "muhammad.jawad@pracpathways.com.au",
+      "full_name": "Muhammad Jawad",
+      "phone": "+61 8 6102 2094",
+      "role": "owner",
+      "is_active": true,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Jawad",
+      "preferences": {
+        "theme": "light",
+        "notifications": true
+      },
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "user_sohail_002",
+      "organization_id": "org_pracpathways_001",
+      "email": "sohail.sadiq@pracpathways.com.au",
+      "full_name": "Sohail Sadiq",
+      "phone": "+61 8 6102 2094",
+      "role": "owner",
+      "is_active": true,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sohail",
+      "preferences": {
+        "theme": "light",
+        "notifications": true
+      },
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "user_ayesha_003",
+      "organization_id": "org_pracpathways_001",
+      "email": "ayesha.sohail@pracpathways.com.au",
+      "full_name": "Ayesha Sohail",
+      "phone": "+61 412 111 222",
+      "role": "agent",
+      "is_active": true,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ayesha",
+      "preferences": {
+        "theme": "light",
+        "notifications": true
+      },
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "user_maryam_004",
+      "organization_id": "org_pracpathways_001",
+      "email": "maryam.touqeer@pracpathways.com.au",
+      "full_name": "Maryam Touqeer",
+      "phone": "+61 413 333 444",
+      "role": "agent",
+      "is_active": true,
+      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maryam",
+      "preferences": {
+        "theme": "light",
+        "notifications": true
+      },
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "user_credentials": [
+    {
+      "user_id": "user_jawad_001",
+      "email": "muhammad.jawad@pracpathways.com.au",
+      "password_hash": "20c4ac7d27f3342df61895fb65a6229db67609a70e4b9a1bfe0ec2a832fd52a8e0bdd80c2bbce99e54f0172cce20a3ec17aba9442fc755cad6218600d37572de",
+      "salt": "530c97d40d3c2ed669f4093b501bb086",
+      "temp_password_active": false,
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "user_id": "user_sohail_002",
+      "email": "sohail.sadiq@pracpathways.com.au",
+      "password_hash": "a76b1a970be9cd0f3872545d3fc4078d9b26ab18816df417a2bc4ac866170f9f4b7f6039abd389b8385a52811138fe94cb6ece5f320a2bd513fbc45a71c551b5",
+      "salt": "aeec739c692daf67c06776c8d5b1dc7e",
+      "temp_password_active": false,
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "user_id": "user_ayesha_003",
+      "email": "ayesha.sohail@pracpathways.com.au",
+      "password_hash": "c5337a7d8b11035c65c9d937fabb378bb3487e9a5db1ae30c3f9e96a222179fe03abfff28e157964a68f9d6e0228db7d80aa790712fd455e93dbef8aa071f088",
+      "salt": "9e85058fe88ec9bb00fbceabc7049b30",
+      "temp_password_active": false,
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "user_id": "user_maryam_004",
+      "email": "maryam.touqeer@pracpathways.com.au",
+      "password_hash": "bc0afe75c19ac557cb1dff7762571790223fa00a13f5399a5aef685b1cb43670395d0b48ff945f8ac9cf9b9b630326cc93e46557f5f45cfd3dbb4e89e0714646",
+      "salt": "03d330fc13776fa0e52ebfb87dc11f4b",
+      "temp_password_active": false,
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "706f4b44960cabd1fa2911838b8a1c9383486c4eb5bd053f8c3da2b9306e69db",
+      "user_id": "user_sohail_002",
+      "email": "sohail.sadiq@pracpathways.com.au",
+      "role": "owner",
+      "expires_at": "2026-10-30T09:03:07.801Z",
+      "created_at": "2026-10-23T09:03:07.802Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "course_cpc40120_self",
+      "organization_id": "org_pracpathways_001",
+      "code": "CPC40120",
+      "title": "Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "official_url": "https://www.pracpathways.com.au/certificate-iv-in-building-and-construction-building/",
+      "is_active": true,
+      "short_description": "Nationally accredited qualification (19 units) for tradies stepping up to site supervision, small-to-medium project coordination, and builder licensing pathways in Australia.",
+      "email_information": "CPC40120 Certificate IV in Building and Construction is tailored for tradespeople seeking career advancement into site management or builder contractor licensing. Study online with 24/7 LMS access.",
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "course_cpc40120_blended",
+      "organization_id": "org_pracpathways_001",
+      "code": "CPC40120",
+      "title": "Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Blended / Structured Delivery",
+      "official_url": "https://www.pracpathways.com.au/certificate-iv-in-building-and-construction-building/",
+      "is_active": true,
+      "short_description": "Structured 36-week delivery format featuring scheduled online workshops and guided assessor mentoring for building practitioners.",
+      "email_information": "Structured blended delivery includes weekly interactive trainer-led sessions alongside comprehensive online study materials.",
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "course_cpc50220_self",
+      "organization_id": "org_pracpathways_001",
+      "code": "CPC50220",
+      "title": "Diploma of Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "official_url": "https://www.pracpathways.com.au/diploma-of-building-and-construction-building/",
+      "is_active": true,
+      "short_description": "Advanced qualification (27 units) for experienced trades, project managers, and builders pursuing commercial/residential contractor licensing and construction leadership.",
+      "email_information": "CPC50220 Diploma of Building and Construction offers advanced training in building codes, project administration, and site management for building work contractor applications.",
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "course_cpc50220_blended",
+      "organization_id": "org_pracpathways_001",
+      "code": "CPC50220",
+      "title": "Diploma of Building and Construction (Building)",
+      "delivery_variant": "Blended / Structured Delivery",
+      "official_url": "https://www.pracpathways.com.au/diploma-of-building-and-construction-building/",
+      "is_active": true,
+      "short_description": "Comprehensive 62-week guided curriculum with direct trainer mentoring and industry scenario workshops.",
+      "email_information": "Our structured Diploma program guides you through complex construction contracts, structural principles, and estimating.",
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "invitations": [
+    {
+      "id": "invite_001",
+      "organization_id": "org_pracpathways_001",
+      "email": "muhammad.jawad@pracpathways.com.au",
+      "full_name": "Muhammad Jawad",
+      "role": "owner",
+      "token": "jawad-setup-token-98124",
+      "expires_at": "2026-10-30T07:39:51.998Z",
+      "accepted_at": "2026-10-23T07:39:51.480Z",
+      "invited_by": "user_jawad_001",
+      "created_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "invite_002",
+      "organization_id": "org_pracpathways_001",
+      "email": "sohail.sadiq@pracpathways.com.au",
+      "full_name": "Sohail Sadiq",
+      "role": "owner",
+      "token": "sohail-setup-token-74129",
+      "expires_at": "2026-10-30T07:39:51.998Z",
+      "accepted_at": "2026-10-23T07:39:51.480Z",
+      "invited_by": "user_jawad_001",
+      "created_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "invite_003",
+      "organization_id": "org_pracpathways_001",
+      "email": "ayesha.sohail@pracpathways.com.au",
+      "full_name": "Ayesha Sohail",
+      "role": "agent",
+      "token": "ayesha-setup-token-38102",
+      "expires_at": "2026-10-30T07:39:51.998Z",
+      "accepted_at": "2026-10-23T07:39:51.480Z",
+      "invited_by": "user_jawad_001",
+      "created_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "invite_004",
+      "organization_id": "org_pracpathways_001",
+      "email": "maryam.touqeer@pracpathways.com.au",
+      "full_name": "Maryam Touqeer",
+      "role": "agent",
+      "token": "maryam-setup-token-65912",
+      "expires_at": "2026-10-30T07:39:51.998Z",
+      "accepted_at": "2026-10-23T07:39:51.480Z",
+      "invited_by": "user_jawad_001",
+      "created_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "contact_001",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "Lachlan Murray",
+      "email": "lachlan.murray@adelaidebuild.com.au",
+      "email_normalized": "lachlan.murray@adelaidebuild.com.au",
+      "phone_raw": "0412 345 678",
+      "phone_normalized": "+61412345678",
+      "company": "Murray Carpentry & Construct",
+      "city": "Dulwich",
+      "country": "Australia",
+      "state_or_postcode": "SA 5065",
+      "course_interest": "CPC40120 Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "course_review_required": false,
+      "tags": [
+        "Website Enquiry",
+        "Builder Licence Pathway",
+        "Adelaide Local"
+      ],
+      "assigned_agent_id": "user_ayesha_003",
+      "lifecycle_status": "lead",
+      "first_enquiry_at": "2026-10-23T03:39:51.998Z",
+      "latest_enquiry_at": "2026-10-23T03:39:51.998Z",
+      "last_contacted_at": "2026-10-23T05:39:51.998Z",
+      "next_follow_up_at": "2026-10-23T09:39:51.998Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "communication_preferences": {
+        "email": true,
+        "phone": true
+      },
+      "conflict_flag": false,
+      "custom_fields": {
+        "funding_eligibility": "Eligible",
+        "employer_sponsor": "Adelaide Build Group",
+        "student_usi": "USI1029384",
+        "prior_education_level": "Certificate III",
+        "white_card_holder": true,
+        "owner_financial_notes": "Approved payment plan - $1,500 deposit received; eligible for SA subsidised concession."
+      },
+      "created_at": "2026-10-23T03:39:51.998Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "contact_002",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "Sarah Jenkins",
+      "email": "s.jenkins@melbourneprojects.com.au",
+      "email_normalized": "s.jenkins@melbourneprojects.com.au",
+      "phone_raw": "0423 456 789",
+      "phone_normalized": "+61423456789",
+      "company": "Jenkins Project Works",
+      "city": "Richmond",
+      "country": "Australia",
+      "state_or_postcode": "VIC 3121",
+      "course_interest": "CPC50220 Diploma of Building and Construction (Building)",
+      "delivery_variant": "Blended / Structured Delivery",
+      "course_review_required": false,
+      "tags": [
+        "Meta Ad",
+        "Diploma Enquiry",
+        "Instagram Lead"
+      ],
+      "assigned_agent_id": "user_maryam_004",
+      "lifecycle_status": "lead",
+      "first_enquiry_at": "2026-10-22T23:39:51.998Z",
+      "latest_enquiry_at": "2026-10-22T23:39:51.998Z",
+      "next_follow_up_at": "2026-10-23T12:39:51.998Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "communication_preferences": {
+        "email": true,
+        "phone": true
+      },
+      "conflict_flag": false,
+      "custom_fields": {
+        "funding_eligibility": "Pending Documentation",
+        "prior_education_level": "Certificate IV / Diploma",
+        "white_card_holder": true,
+        "owner_financial_notes": "Requested fee-for-service quote with invoice split over 3 milestones."
+      },
+      "created_at": "2026-10-22T23:39:51.998Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "contact_003",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "David Campbell",
+      "email": "david.campbell@campbellcon.com.au",
+      "email_normalized": "david.campbell@campbellcon.com.au",
+      "phone_raw": "0434 567 890",
+      "phone_normalized": "+61434567890",
+      "company": "Campbell Commercial",
+      "city": "Norwood",
+      "country": "Australia",
+      "state_or_postcode": "SA 5067",
+      "course_interest": "CPC40120 Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "course_review_required": false,
+      "tags": [
+        "Google Ad",
+        "Site Supervisor",
+        "Enrolment Consultation"
+      ],
+      "assigned_agent_id": "user_ayesha_003",
+      "lifecycle_status": "contact",
+      "first_enquiry_at": "2026-10-21T07:39:51.999Z",
+      "latest_enquiry_at": "2026-10-22T07:39:51.999Z",
+      "last_contacted_at": "2026-10-22T19:39:51.999Z",
+      "next_follow_up_at": "2026-10-24T07:39:51.999Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "conflict_flag": false,
+      "custom_fields": {
+        "funding_eligibility": "Eligible",
+        "student_usi": "USI8839201",
+        "prior_education_level": "Year 12",
+        "white_card_holder": true
+      },
+      "created_at": "2026-10-21T07:39:51.999Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "contact_004",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "Brooke Taylor",
+      "email": "brooke.taylor@taylorhomes.com.au",
+      "email_normalized": "brooke.taylor@taylorhomes.com.au",
+      "phone_raw": "0445 678 901",
+      "phone_normalized": "+61445678901",
+      "company": "Taylor Residential",
+      "city": "Glenelg",
+      "country": "Australia",
+      "state_or_postcode": "SA 5045",
+      "course_interest": "CPC50220 Diploma of Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "course_review_required": false,
+      "tags": [
+        "Direct Referral",
+        "Enrolled Student",
+        "South Australia"
+      ],
+      "assigned_agent_id": "user_maryam_004",
+      "lifecycle_status": "customer",
+      "first_enquiry_at": "2026-10-18T07:39:51.999Z",
+      "latest_enquiry_at": "2026-10-20T07:39:51.999Z",
+      "last_contacted_at": "2026-10-22T07:39:51.999Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "conflict_flag": false,
+      "custom_fields": {
+        "funding_eligibility": "Eligible",
+        "student_usi": "USI5544332",
+        "prior_education_level": "Bachelor or Higher",
+        "white_card_holder": true,
+        "owner_financial_notes": "Course fee $6,450 paid in full upfront."
+      },
+      "created_at": "2026-10-18T07:39:51.999Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "contact_005",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "Liam O'Connor",
+      "email": "liam.oconnor@oconnorcarpentry.com.au",
+      "email_normalized": "liam.oconnor@oconnorcarpentry.com.au",
+      "phone_raw": "0456 789 012",
+      "phone_normalized": "+61456789012",
+      "company": "O'Connor Carpentry Pty Ltd",
+      "city": "Adelaide",
+      "country": "Australia",
+      "state_or_postcode": "SA 5000",
+      "course_interest": "CPC40120 Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "course_review_required": false,
+      "tags": [
+        "Direct Organic",
+        "Unassigned Lead",
+        "Fast Track"
+      ],
+      "lifecycle_status": "lead",
+      "first_enquiry_at": "2026-10-23T06:39:51.999Z",
+      "latest_enquiry_at": "2026-10-23T06:39:51.999Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "conflict_flag": false,
+      "custom_fields": {
+        "funding_eligibility": "Pending Documentation",
+        "prior_education_level": "Certificate III",
+        "white_card_holder": true
+      },
+      "created_at": "2026-10-23T06:39:51.999Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "contact_006",
+      "organization_id": "org_pracpathways_001",
+      "full_name": "Mitchell Barnes",
+      "email": "m.barnes@adelaiderenovations.com.au",
+      "email_normalized": "m.barnes@adelaiderenovations.com.au",
+      "phone_raw": "0467 890 123",
+      "phone_normalized": "+61467890123",
+      "company": "Adelaide Renovations & Living",
+      "city": "Prospect",
+      "country": "Australia",
+      "state_or_postcode": "SA 5082",
+      "course_interest": "CPC40120 Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "course_review_required": false,
+      "tags": [
+        "Archived Record",
+        "Did Not Proceed"
+      ],
+      "assigned_agent_id": "user_ayesha_003",
+      "lifecycle_status": "archived",
+      "is_archived": true,
+      "first_enquiry_at": "2026-10-03T07:39:51.999Z",
+      "latest_enquiry_at": "2026-10-05T07:39:51.999Z",
+      "do_not_call": false,
+      "email_suppressed": false,
+      "conflict_flag": false,
+      "custom_fields": {
+        "funding_eligibility": "Ineligible",
+        "prior_education_level": "Year 10",
+        "white_card_holder": false,
+        "owner_financial_notes": "Student deferred enrolment due to interstate relocation."
+      },
+      "created_at": "2026-10-03T07:39:51.999Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "lead_submissions": [
+    {
+      "id": "lead_sub_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "capture_channel": "website",
+      "marketing_source": "google",
+      "provider": "website",
+      "form_id": "ptp_course_enquiry_form",
+      "utm_source": "google",
+      "utm_medium": "cpc",
+      "utm_campaign": "ptp_cpc40120_builder_adelaide",
+      "gclid": "CjwKCAjw7p79BRAjEiwA9O1zG6_ptp_au",
+      "landing_page": "https://www.pracpathways.com.au/certificate-iv-in-building-and-construction-building/",
+      "referrer": "https://www.google.com.au/",
+      "course_interest": "CPC40120 Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "state_or_postcode": "SA 5065",
+      "course_review_required": false,
+      "submitted_fields": {
+        "course_interest": "CPC40120 Certificate IV in Building and Construction (Building)",
+        "delivery_variant": "Self-Paced Online",
+        "experience": "5 years carpentry trade experience",
+        "message": "Looking to get my residential builder licence in South Australia."
+      },
+      "consent_text": "I agree to be contacted by Practical Training Pathways regarding course enrolment.",
+      "consent_timestamp": "2026-10-23T03:39:51.999Z",
+      "idempotency_key": "web_form_sub_lachlan_01",
+      "is_test": false,
+      "submission_timestamp": "2026-10-23T03:39:51.999Z",
+      "processed_at": "2026-10-23T03:39:51.999Z",
+      "created_at": "2026-10-23T03:39:51.999Z"
+    },
+    {
+      "id": "lead_sub_002",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_002",
+      "capture_channel": "meta_ads",
+      "marketing_source": "meta",
+      "provider": "meta",
+      "provider_lead_id": "meta_lead_9921448821",
+      "form_id": "meta_instant_form_cpc50220_diploma",
+      "campaign_name": "Meta IG Leads Diploma Building VIC/SA",
+      "campaign_id": "meta_camp_449911",
+      "fbclid": "IwAR0s_k94b92_test_fbclid",
+      "course_interest": "CPC50220 Diploma of Building and Construction (Building)",
+      "delivery_variant": "Blended / Structured Delivery",
+      "state_or_postcode": "VIC 3121",
+      "course_review_required": false,
+      "submitted_fields": {
+        "field_full_name": "Sarah Jenkins",
+        "field_email": "s.jenkins@melbourneprojects.com.au",
+        "field_phone": "0423 456 789",
+        "field_city": "Richmond",
+        "course_interest": "CPC50220 Diploma of Building and Construction (Building)"
+      },
+      "idempotency_key": "meta_lead_9921448821",
+      "is_test": false,
+      "submission_timestamp": "2026-10-22T23:39:51.999Z",
+      "processed_at": "2026-10-22T23:39:51.999Z",
+      "created_at": "2026-10-22T23:39:51.999Z"
+    },
+    {
+      "id": "lead_sub_003",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_003",
+      "capture_channel": "google_ads",
+      "marketing_source": "google",
+      "provider": "google",
+      "provider_lead_id": "google_lead_884102941",
+      "campaign_name": "Search - CPC40120 Certificate IV Building SA",
+      "campaign_id": "google_camp_773322",
+      "course_interest": "CPC40120 Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "state_or_postcode": "SA 5067",
+      "course_review_required": false,
+      "submitted_fields": {
+        "user_column_EMAIL": "david.campbell@campbellcon.com.au",
+        "user_column_FULL_NAME": "David Campbell",
+        "user_column_PHONE_NUMBER": "0434 567 890",
+        "user_column_COMPANY_NAME": "Campbell Commercial",
+        "course_interest": "CPC40120 Certificate IV in Building and Construction"
+      },
+      "idempotency_key": "google_lead_884102941",
+      "is_test": false,
+      "submission_timestamp": "2026-10-21T07:39:51.999Z",
+      "processed_at": "2026-10-21T07:39:51.999Z",
+      "created_at": "2026-10-21T07:39:51.999Z"
+    }
+  ],
+  "deals": [
+    {
+      "id": "deal_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "assigned_agent_id": "user_ayesha_003",
+      "title": "CPC40120 Cert IV — Lachlan Murray",
+      "stage": "course_discussion",
+      "course_code": "CPC40120",
+      "course_title": "Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "expected_close_date": "2026-11-06",
+      "notes": "Discussed self-paced flexibility and trade experience recognition. Highly keen.",
+      "created_at": "2026-10-23T05:39:51.999Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "deal_002",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_002",
+      "assigned_agent_id": "user_maryam_004",
+      "title": "CPC50220 Diploma — Sarah Jenkins",
+      "stage": "new_enquiry",
+      "course_code": "CPC50220",
+      "course_title": "Diploma of Building and Construction (Building)",
+      "delivery_variant": "Blended / Structured Delivery",
+      "expected_close_date": "2026-11-12",
+      "notes": "Enquired about upcoming structured virtual workshop schedules.",
+      "created_at": "2026-10-23T01:39:51.999Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "deal_003",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_003",
+      "assigned_agent_id": "user_ayesha_003",
+      "title": "CPC40120 Cert IV — David Campbell",
+      "stage": "documents_pending",
+      "course_code": "CPC40120",
+      "course_title": "Certificate IV in Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "expected_close_date": "2026-11-02",
+      "notes": "USI number confirmed. Awaiting upload of photo ID and trade qualification.",
+      "created_at": "2026-10-22T07:39:51.999Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "deal_004",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_004",
+      "assigned_agent_id": "user_maryam_004",
+      "title": "CPC50220 Diploma — Brooke Taylor",
+      "stage": "enrolled",
+      "course_code": "CPC50220",
+      "course_title": "Diploma of Building and Construction (Building)",
+      "delivery_variant": "Self-Paced Online",
+      "value": 4500,
+      "currency": "AUD",
+      "expected_close_date": "2026-10-22",
+      "notes": "Enrolment finalized. LMS credentials issued for online self-paced study.",
+      "created_at": "2026-10-19T07:39:51.999Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "deal_id": "deal_001",
+      "assigned_agent_id": "user_ayesha_003",
+      "title": "Follow up call on CPC40120 online enrolment pack",
+      "description": "Verify if candidate received course guide and answer builder licensing questions.",
+      "due_date": "2026-10-23T09:39:51.999Z",
+      "priority": "high",
+      "status": "completed",
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T09:04:05.344Z",
+      "completed_at": "2026-10-23T09:04:05.342Z"
+    },
+    {
+      "id": "task_002",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_002",
+      "deal_id": "deal_002",
+      "assigned_agent_id": "user_maryam_004",
+      "title": "Initial consultation call: CPC50220 Diploma delivery options",
+      "description": "Walk through blended timetable and assess prior construction experience.",
+      "due_date": "2026-10-23T12:39:51.999Z",
+      "priority": "urgent",
+      "status": "completed",
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T09:04:04.912Z",
+      "completed_at": "2026-10-23T09:04:04.910Z"
+    },
+    {
+      "id": "task_003",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_003",
+      "deal_id": "deal_003",
+      "assigned_agent_id": "user_ayesha_003",
+      "title": "Check document uploads for David Campbell",
+      "description": "Check student portal for ID and carpentry trade papers.",
+      "due_date": "2026-10-24T07:39:51.999Z",
+      "priority": "medium",
+      "status": "completed",
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T09:04:06.348Z",
+      "completed_at": "2026-10-23T09:04:06.346Z"
+    }
+  ],
+  "call_logs": [
+    {
+      "id": "call_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "agent_id": "user_ayesha_003",
+      "timestamp": "2026-10-23T05:39:51.999Z",
+      "outcome": "connected",
+      "duration_seconds": 245,
+      "notes": "Spoke with Lachlan. Highly interested in the self-paced CPC40120 Certificate IV format to balance around current carpentry jobs.",
+      "next_action": "Email course information pack and follow up",
+      "follow_up_date": "2026-10-23T09:39:51.999Z",
+      "created_at": "2026-10-23T05:39:51.999Z"
+    },
+    {
+      "id": "call_002",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_003",
+      "agent_id": "user_ayesha_003",
+      "timestamp": "2026-10-22T19:39:51.999Z",
+      "outcome": "interested",
+      "duration_seconds": 410,
+      "notes": "Discussed building contractor licence requirements in South Australia. Explained unit breakdown.",
+      "next_action": "Send enrolment checklist",
+      "follow_up_date": "2026-10-24T07:39:51.999Z",
+      "created_at": "2026-10-22T19:39:51.999Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note_001",
+      "organization_id": "org_pracpathways_001",
+      "contact_id": "contact_001",
+      "author_id": "user_ayesha_003",
+      "content": "Candidate has 5 years on site in Adelaide. Enquiring specifically about CPC40120 units for CBS builder licence application.",
+      "created_at": "2026-10-23T05:39:51.999Z",
+      "updated_at": "2026-10-23T05:39:51.999Z"
+    }
+  ],
+  "email_templates": [
+    {
+      "id": "tpl_ack_001",
+      "organization_id": "org_pracpathways_001",
+      "name": "New Enquiry Acknowledgement",
+      "slug": "welcome-acknowledgement",
+      "subject": "We received your enquiry — Practical Training Pathways",
+      "body_html": "<div style=\"font-family: Arial, sans-serif; line-height: 1.6; color: #1e293b;\">\n          <h2>Thank you for your enquiry, {{contact.name}}</h2>\n          <p>We have received your enquiry regarding <strong>{{course.title}}</strong> with Practical Training Pathways (RTO # 22256).</p>\n          <p>An admissions advisor (<strong>{{agent.name}}</strong>) will review your enquiry and contact you shortly to discuss study requirements and course delivery options.</p>\n          <p style=\"margin-top: 24px; padding: 16px; background-color: #f1f5f9; border-radius: 8px;\">\n            <strong>Practical Training Pathways</strong><br>\n            Level 3, 169 Fullarton Rd, Dulwich, South Australia 5065<br>\n            Phone: +61 8 6102 2094 | Email: info@pracpathways.com.au<br>\n            Website: <a href=\"https://www.pracpathways.com.au\" style=\"color: #20409A;\">www.pracpathways.com.au</a>\n          </p>\n          <p style=\"font-size: 12px; color: #64748b; margin-top: 20px;\">\n            If you did not make this enquiry or wish to unsubscribe, please <a href=\"{{unsubscribe_url}}\" style=\"color: #64748b;\">click here</a>.\n          </p>\n        </div>",
+      "body_text": "Thank you for contacting Practical Training Pathways (RTO # 22256). We have received your enquiry and an advisor will contact you shortly.",
+      "variables": [
+        "contact.name",
+        "course.title",
+        "agent.name",
+        "unsubscribe_url"
+      ],
+      "is_system": true,
+      "is_active": true,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "tpl_course_info",
+      "organization_id": "org_pracpathways_001",
+      "name": "Official Course Information Pack",
+      "slug": "course-information-pack",
+      "subject": "Your Course Guide: {{course.title}} — Practical Training Pathways",
+      "body_html": "<div style=\"font-family: Arial, sans-serif; line-height: 1.6; color: #1e293b;\">\n          <h2>Official Course Information: {{course.title}}</h2>\n          <p>Hi {{contact.name}},</p>\n          <p>Thank you for taking the time to speak with our admissions team. As requested, here is the official information regarding <strong>{{course.title}}</strong>.</p>\n          <p>You can review complete unit details, delivery options, and structural requirements on our official website:</p>\n          <p><a href=\"https://www.pracpathways.com.au/certificate-iv-in-building-and-construction-building/\" style=\"display: inline-block; background-color: #20409A; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold;\">View Official Course Details</a></p>\n          <p>Best regards,<br><strong>{{agent.name}}</strong><br>Practical Training Pathways (RTO # 22256)</p>\n          <p style=\"font-size: 12px; color: #64748b; margin-top: 20px;\">\n            To unsubscribe from course updates: <a href=\"{{unsubscribe_url}}\" style=\"color: #64748b;\">Unsubscribe</a>\n          </p>\n        </div>",
+      "body_text": "Course details from Practical Training Pathways. Please visit www.pracpathways.com.au for official course information.",
+      "variables": [
+        "contact.name",
+        "course.title",
+        "agent.name",
+        "unsubscribe_url"
+      ],
+      "is_system": false,
+      "is_active": true,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "tpl_appt_confirm",
+      "organization_id": "org_pracpathways_001",
+      "name": "Adelaide Course Consultation Confirmation",
+      "slug": "appointment-confirmation",
+      "subject": "Appointment Confirmed: Building & Construction Consultation (Australia/Adelaide Time)",
+      "body_html": "<div style=\"font-family: Arial, sans-serif; line-height: 1.6; color: #1e293b;\">\n          <h2>Consultation Confirmed</h2>\n          <p>Hi {{contact.name}},</p>\n          <p>Your course advisory appointment has been scheduled with <strong>{{agent.name}}</strong>.</p>\n          <p style=\"padding: 12px; background: #e0f2fe; border-left: 4px solid #0284c7; border-radius: 4px;\">\n            <strong>Timezone:</strong> Australia/Adelaide (ACDT / ACST)<br>\n            Please note all times are scheduled in Adelaide local time.\n          </p>\n          <p>If you need to reschedule or change your appointment, please reply to this email or call +61 8 6102 2094.</p>\n        </div>",
+      "body_text": "Your consultation with Practical Training Pathways has been confirmed in Australia/Adelaide local time.",
+      "variables": [
+        "contact.name",
+        "agent.name"
+      ],
+      "is_system": true,
+      "is_active": true,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "email_messages": [],
+  "job_queue": [],
+  "audit_events": [
+    {
+      "id": "audit_init_001",
+      "organization_id": "org_pracpathways_001",
+      "actor_name": "System Initializer",
+      "action": "system_initialized",
+      "target_type": "organization",
+      "target_id": "org_pracpathways_001",
+      "details": {
+        "organization": "Practical Training Pathways",
+        "rto": "22256",
+        "timezone": "Australia/Adelaide",
+        "currency": "AUD",
+        "courses": [
+          "CPC40120",
+          "CPC50220"
+        ]
+      },
+      "created_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "audit_1792746187808_hj6p7g",
+      "created_at": "2026-10-23T09:03:07.808Z",
+      "organization_id": "org_pracpathways_001",
+      "actor_name": "Sohail Sadiq",
+      "action": "login_success",
+      "target_type": "user",
+      "target_id": "user_sohail_002",
+      "details": {
+        "email": "sohail.sadiq@pracpathways.com.au",
+        "role": "owner"
+      }
+    }
+  ],
+  "notifications": [],
+  "integration_connections": [
+    {
+      "id": "conn_website_001",
+      "organization_id": "org_pracpathways_001",
+      "provider": "website_webhook",
+      "status": "connected_and_verified",
+      "config": {
+        "endpoint": "/api/webhooks/website-lead",
+        "allowed_domains": [
+          "pracpathways.com.au",
+          "www.pracpathways.com.au"
+        ],
+        "honeypot_field": "website_hp"
+      },
+      "last_verified_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "conn_meta_002",
+      "organization_id": "org_pracpathways_001",
+      "provider": "meta_ads",
+      "status": "configuration_incomplete",
+      "config": {
+        "page_id": "",
+        "app_id": "",
+        "webhook_url": "/api/webhooks/meta"
+      },
+      "last_error": "Requires Meta Page Access Token and App Secret configuration.",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "conn_google_003",
+      "organization_id": "org_pracpathways_001",
+      "provider": "google_ads",
+      "status": "configuration_incomplete",
+      "config": {
+        "customer_id": "",
+        "webhook_url": "/api/webhooks/google-ads"
+      },
+      "last_error": "Requires Google Ads Lead Form webhook key setup.",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "conn_email_004",
+      "organization_id": "org_pracpathways_001",
+      "provider": "email_provider",
+      "status": "configuration_incomplete",
+      "config": {
+        "verified_domain": "pracpathways.com.au",
+        "spf_status": "pending_dns",
+        "dkim_status": "pending_dns",
+        "dmarc_status": "pending_dns"
+      },
+      "last_error": "Requires domain DNS verification (SPF/DKIM/DMARC) in Resend/Postmark.",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "conn_elementor_005",
+      "organization_id": "org_pracpathways_001",
+      "provider": "elementor_pro",
+      "status": "connected_and_verified",
+      "config": {
+        "webhook_endpoint_url": "https://crm.pracpathways.com.au/api/integrations/elementor/leads",
+        "signing_secret": "ptp_elem_sec_8f93e2b10495a82c3b4781df5920a741",
+        "secret_token": "ptp_tok_c819d45a9012",
+        "field_mappings": {
+          "fullName": "name",
+          "firstName": "first_name",
+          "lastName": "last_name",
+          "email": "email",
+          "phone": "phone",
+          "courseInterest": "course",
+          "deliveryVariant": "delivery_variant",
+          "message": "message",
+          "stateOrPostcode": "state",
+          "consent": "consent",
+          "formId": "form_id",
+          "pageUrl": "page_url"
+        },
+        "auto_create_followup_task": true,
+        "suppress_test_emails": true,
+        "last_received_at": "2026-10-23T07:39:51.480Z",
+        "last_success_at": "2026-10-23T07:39:51.480Z"
+      },
+      "last_verified_at": "2026-10-23T07:39:51.480Z",
+      "last_activity_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "conn_3cx_006",
+      "organization_id": "org_pracpathways_001",
+      "provider": "three_cx",
+      "status": "connected_and_verified",
+      "config": {
+        "pbx_url": "https://ptp.3cx.com.au:5001",
+        "version": "v20",
+        "licence_edition": "Pro",
+        "api_key": "ptp_3cx_sec_9942a1b7e42d8f16",
+        "agent_extensions": {
+          "ayesha_extension": "101",
+          "maryam_extension": "102",
+          "jawad_extension": "100",
+          "sohail_extension": "103"
+        },
+        "features": {
+          "contact_lookup": true,
+          "call_journaling": true,
+          "screen_pop": true
+        },
+        "last_call_received_at": "2026-10-23T07:39:51.480Z",
+        "last_call_id": "3cx_call_init_001",
+        "last_call_agent": "Ayesha Sohail"
+      },
+      "last_verified_at": "2026-10-23T07:39:51.480Z",
+      "last_activity_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "webhook_events": [],
+  "suppression_records": [],
+  "module_definitions": [
+    {
+      "id": "mod_contacts",
+      "organization_id": "org_pracpathways_001",
+      "key": "contacts",
+      "name": "Contacts & Students",
+      "singular_name": "Contact",
+      "description": "Primary registry of students, prospects, and tradies enquiring about CPC qualifications.",
+      "icon": "Users",
+      "sidebar_position": 2,
+      "is_enabled": true,
+      "is_system": true,
+      "agent_access": "assigned_only",
+      "table_columns": [
+        "full_name",
+        "course_interest",
+        "funding_eligibility",
+        "white_card_holder",
+        "assigned_agent",
+        "lifecycle_status"
+      ],
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "mod_leads",
+      "organization_id": "org_pracpathways_001",
+      "key": "leads",
+      "name": "Leads & Enquiries",
+      "singular_name": "Enquiry",
+      "description": "Multi-channel raw submission stream from Elementor website forms, Meta ads, and Google ads.",
+      "icon": "Inbox",
+      "sidebar_position": 3,
+      "is_enabled": true,
+      "is_system": true,
+      "agent_access": "assigned_only",
+      "table_columns": [
+        "student_contact",
+        "course_interest",
+        "channel",
+        "attribution",
+        "assigned_agent",
+        "status"
+      ],
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "mod_deals",
+      "organization_id": "org_pracpathways_001",
+      "key": "deals",
+      "name": "Course Enquiry Pipeline",
+      "singular_name": "Opportunity",
+      "description": "Admissions and qualification sales pipeline from initial contact to enrolled student.",
+      "icon": "GraduationCap",
+      "sidebar_position": 6,
+      "is_enabled": true,
+      "is_system": true,
+      "agent_access": "assigned_only",
+      "table_columns": [
+        "title",
+        "stage",
+        "course_title",
+        "assigned_agent",
+        "expected_close_date"
+      ],
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "mod_tasks",
+      "organization_id": "org_pracpathways_001",
+      "key": "tasks",
+      "name": "Tasks & Follow-ups",
+      "singular_name": "Task",
+      "description": "Scheduled callbacks, eligibility checks, and document collection tasks.",
+      "icon": "CheckSquare",
+      "sidebar_position": 5,
+      "is_enabled": true,
+      "is_system": true,
+      "agent_access": "assigned_only",
+      "table_columns": [
+        "title",
+        "due_date",
+        "priority",
+        "status",
+        "assigned_agent"
+      ],
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "mod_courses",
+      "organization_id": "org_pracpathways_001",
+      "key": "courses",
+      "name": "Accredited Courses",
+      "singular_name": "Course",
+      "description": "Nationally accredited qualifications and delivery variants.",
+      "icon": "BookOpen",
+      "sidebar_position": 7,
+      "is_enabled": true,
+      "is_system": true,
+      "agent_access": "all",
+      "table_columns": [
+        "code",
+        "title",
+        "delivery_variant",
+        "is_active"
+      ],
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "mod_employers",
+      "organization_id": "org_pracpathways_001",
+      "key": "employers",
+      "name": "Employers & Industry Partners",
+      "singular_name": "Employer",
+      "description": "Host builders, construction firms, and corporate sponsors supporting apprentices and trade students.",
+      "icon": "Building2",
+      "sidebar_position": 8,
+      "is_enabled": true,
+      "is_system": false,
+      "agent_access": "all",
+      "table_columns": [
+        "company_name",
+        "primary_contact",
+        "contact_email",
+        "contact_phone",
+        "industry_sector"
+      ],
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "field_definitions": [
+    {
+      "id": "fld_con_funding",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "contacts",
+      "field_key": "funding_eligibility",
+      "label": "Funding & Subsidy Eligibility",
+      "field_type": "single_select",
+      "help_text": "Eligibility for South Australia or Victoria state government construction subsidies.",
+      "placeholder": "Select subsidy status",
+      "is_required": false,
+      "options": [
+        {
+          "label": "Eligible (Subsidised)",
+          "value": "Eligible",
+          "color": "emerald"
+        },
+        {
+          "label": "Ineligible (Fee For Service)",
+          "value": "Ineligible",
+          "color": "slate"
+        },
+        {
+          "label": "Pending Documentation",
+          "value": "Pending Documentation",
+          "color": "amber"
+        },
+        {
+          "label": "Exemption Approved",
+          "value": "Exemption Approved",
+          "color": "blue"
+        }
+      ],
+      "section": "Enrolment & Funding",
+      "display_order": 1,
+      "show_in_form": true,
+      "show_in_table": true,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_con_employer",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "contacts",
+      "field_key": "employer_sponsor",
+      "label": "Employer / Sponsor Name",
+      "field_type": "short_text",
+      "help_text": "Name of the building employer sponsoring this tradie or apprentice.",
+      "placeholder": "e.g. Adelaide Build Group Pty Ltd",
+      "is_required": false,
+      "section": "Enrolment & Funding",
+      "display_order": 2,
+      "show_in_form": true,
+      "show_in_table": false,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_con_usi",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "contacts",
+      "field_key": "student_usi",
+      "label": "Unique Student Identifier (USI)",
+      "field_type": "short_text",
+      "help_text": "10-character Australian Unique Student Identifier.",
+      "placeholder": "e.g. USI1029384",
+      "is_required": false,
+      "section": "Compliance & Identity",
+      "display_order": 3,
+      "show_in_form": true,
+      "show_in_table": false,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_con_education",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "contacts",
+      "field_key": "prior_education_level",
+      "label": "Prior Education Level",
+      "field_type": "single_select",
+      "help_text": "Highest prior qualification completed by the applicant.",
+      "placeholder": "Select highest education",
+      "is_required": false,
+      "options": [
+        {
+          "label": "Year 10 or Equivalent",
+          "value": "Year 10"
+        },
+        {
+          "label": "Year 12 or Equivalent",
+          "value": "Year 12"
+        },
+        {
+          "label": "Certificate III (Trade)",
+          "value": "Certificate III"
+        },
+        {
+          "label": "Certificate IV / Diploma",
+          "value": "Certificate IV / Diploma"
+        },
+        {
+          "label": "Bachelor Degree or Higher",
+          "value": "Bachelor or Higher"
+        }
+      ],
+      "section": "Compliance & Identity",
+      "display_order": 4,
+      "show_in_form": true,
+      "show_in_table": false,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_con_white_card",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "contacts",
+      "field_key": "white_card_holder",
+      "label": "Holds Valid White Card (CPCWHS1001)",
+      "field_type": "checkbox",
+      "help_text": "Confirmed possession of general construction induction training card.",
+      "is_required": false,
+      "default_value": false,
+      "section": "Compliance & Identity",
+      "display_order": 5,
+      "show_in_form": true,
+      "show_in_table": true,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_con_owner_notes",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "contacts",
+      "field_key": "owner_financial_notes",
+      "label": "Owner Financial & Enrolment Notes",
+      "field_type": "long_text",
+      "help_text": "Confidential commercial notes visible only to Jawad and Sohail.",
+      "placeholder": "Restricted administrative terms, invoices, and executive notes...",
+      "is_required": false,
+      "section": "Confidential Owner Details",
+      "display_order": 6,
+      "show_in_form": true,
+      "show_in_table": false,
+      "show_in_detail": true,
+      "is_owner_only_view": true,
+      "is_owner_only_edit": true,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_emp_name",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "employers",
+      "field_key": "company_name",
+      "label": "Company Name",
+      "field_type": "short_text",
+      "is_required": true,
+      "placeholder": "e.g. Adelaide Commercial Builders Pty Ltd",
+      "section": "Company Information",
+      "display_order": 1,
+      "show_in_form": true,
+      "show_in_table": true,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_emp_contact",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "employers",
+      "field_key": "primary_contact",
+      "label": "Primary Contact Person",
+      "field_type": "short_text",
+      "is_required": true,
+      "placeholder": "e.g. Marcus Sterling",
+      "section": "Company Information",
+      "display_order": 2,
+      "show_in_form": true,
+      "show_in_table": true,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_emp_email",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "employers",
+      "field_key": "contact_email",
+      "label": "Contact Email",
+      "field_type": "email",
+      "is_required": true,
+      "placeholder": "e.g. m.sterling@adelaidecb.com.au",
+      "section": "Contact Details",
+      "display_order": 3,
+      "show_in_form": true,
+      "show_in_table": true,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_emp_phone",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "employers",
+      "field_key": "contact_phone",
+      "label": "Contact Phone",
+      "field_type": "phone",
+      "is_required": false,
+      "placeholder": "e.g. +61 8 8234 1122",
+      "section": "Contact Details",
+      "display_order": 4,
+      "show_in_form": true,
+      "show_in_table": true,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "fld_emp_sector",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "employers",
+      "field_key": "industry_sector",
+      "label": "Industry Sector",
+      "field_type": "single_select",
+      "is_required": false,
+      "options": [
+        {
+          "label": "Commercial Building & Civil",
+          "value": "Commercial Building & Civil"
+        },
+        {
+          "label": "Residential Construction",
+          "value": "Residential Construction"
+        },
+        {
+          "label": "Carpentry & Joinery",
+          "value": "Carpentry & Joinery"
+        },
+        {
+          "label": "Government & Infrastructure",
+          "value": "Government Infrastructure"
+        }
+      ],
+      "section": "Operations & Placement",
+      "display_order": 5,
+      "show_in_form": true,
+      "show_in_table": true,
+      "show_in_detail": true,
+      "is_owner_only_view": false,
+      "is_owner_only_edit": false,
+      "is_system": false,
+      "is_archived": false,
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ],
+  "custom_records": [
+    {
+      "id": "rec_emp_001",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "employers",
+      "title": "Adelaide Commercial Builders Pty Ltd",
+      "assigned_agent_id": "user_ayesha_003",
+      "data": {
+        "company_name": "Adelaide Commercial Builders Pty Ltd",
+        "primary_contact": "Marcus Sterling",
+        "contact_email": "m.sterling@adelaidecb.com.au",
+        "contact_phone": "+61 8 8234 1122",
+        "industry_sector": "Commercial Building & Civil"
+      },
+      "is_archived": false,
+      "created_by": "user_jawad_001",
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    },
+    {
+      "id": "rec_emp_002",
+      "organization_id": "org_pracpathways_001",
+      "module_key": "employers",
+      "title": "South Coast Framing & Roofing",
+      "assigned_agent_id": "user_maryam_004",
+      "data": {
+        "company_name": "South Coast Framing & Roofing",
+        "primary_contact": "Jason Reynolds",
+        "contact_email": "jason@southcoastframing.com.au",
+        "contact_phone": "+61 412 889 900",
+        "industry_sector": "Carpentry & Joinery"
+      },
+      "is_archived": false,
+      "created_by": "user_sohail_002",
+      "created_at": "2026-10-23T07:39:51.480Z",
+      "updated_at": "2026-10-23T07:39:51.480Z"
+    }
+  ]
+}

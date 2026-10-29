@@ -1,0 +1,9 @@
+{
+  "/settings/modules-and-fields/page": "app/settings/modules-and-fields/page.js",
+  "/calling/page": "app/calling/page.js",
+  "/tasks/page": "app/tasks/page.js",
+  "/integrations/page": "app/integrations/page.js",
+  "/emails/page": "app/emails/page.js",
+  "/api/calling/queue/route": "app/api/calling/queue/route.js",
+  "/api/settings/modules/route": "app/api/settings/modules/route.js"
+}
