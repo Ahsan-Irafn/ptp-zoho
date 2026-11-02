@@ -2,6 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  experimental: {
+    outputFileTracingIncludes: {
+      '/**': ['./.crm_data/**/*', './src/lib/db/**/*'],
+    },
+  },
   headers: async () => [
     {
       source: "/:path*",

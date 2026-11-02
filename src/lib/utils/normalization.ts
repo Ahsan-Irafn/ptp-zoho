@@ -9,8 +9,14 @@ export function normalizeEmail(email: string): string {
   const atIndex = trimmed.lastIndexOf('@');
   if (atIndex === -1) return trimmed;
   
-  const user = trimmed.slice(0, atIndex);
+  let user = trimmed.slice(0, atIndex);
   const domain = trimmed.slice(atIndex + 1);
+
+  // Common typo alias tolerance for team email (e.g. missing 's' in sohail)
+  if (user === 'ohail.sadiq' && domain === 'pracpathways.com.au') {
+    user = 'sohail.sadiq';
+  }
+
   return `${user}@${domain}`;
 }
 

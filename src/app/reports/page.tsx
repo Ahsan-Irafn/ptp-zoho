@@ -170,7 +170,7 @@ export default async function ReportsPage() {
                 <tr key={stat.agent.id} className="hover:bg-slate-50/80 transition-colors">
                   <td className="py-4 px-4">
                     <div className="flex items-center gap-3">
-                      <img src={stat.agent.avatar_url} alt={stat.agent.full_name} className="w-9 h-9 rounded-full bg-slate-200 object-cover" />
+                      <img src={(!stat.agent.avatar_url || stat.agent.avatar_url.includes('dicebear')) ? '/dummy-avatar.svg' : stat.agent.avatar_url} alt={stat.agent.full_name} className="w-9 h-9 rounded-full bg-slate-200 object-cover" />
                       <div>
                         <div className="font-bold text-slate-900 text-base">{stat.agent.full_name}</div>
                         <div className="text-xs text-slate-500 font-mono">{stat.agent.email}</div>

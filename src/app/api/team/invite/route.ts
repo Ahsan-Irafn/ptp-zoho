@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
       full_name: fullName,
       role: (role as Role) || 'agent',
       is_active: true,
-      avatar_url: `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(fullName)}`,
+      avatar_url: '/dummy-avatar.svg',
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
     });

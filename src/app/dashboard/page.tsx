@@ -209,7 +209,7 @@ export default async function DashboardPage() {
                   <div key={agent.id} className="p-5 rounded-2xl bg-slate-50 border border-slate-200">
                     <div className="flex items-center gap-3.5 mb-4">
                       <img 
-                        src={agent.avatar_url || 'https://api.dicebear.com/7.x/avataaars/svg?seed=PTP'} 
+                        src={(!agent.avatar_url || agent.avatar_url.includes('dicebear')) ? '/dummy-avatar.svg' : agent.avatar_url}
                         alt={agent.full_name} 
                         className="w-12 h-12 rounded-full bg-white border border-slate-300"
                       />

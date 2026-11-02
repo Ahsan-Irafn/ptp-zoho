@@ -1,5 +1,7 @@
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
+import defaultDbData from './initial-db.json';
 import {
   Organization,
   Profile,
@@ -52,95 +54,134 @@ export interface CRMDatabase {
   custom_records: CustomRecord[];
 }
 
-const DATA_DIR = path.join(process.cwd(), '.crm_data');
-const DB_FILE = path.join(DATA_DIR, 'db.json');
+function resolveDbPaths(): { dir: string; file: string; isReadOnly: boolean } {
+  const localDir = path.join(process.cwd(), '.crm_data');
+  const localFile = path.join(localDir, 'db.json');
 
-function getEmptyDB(): CRMDatabase {
-  return {
-    organizations: [],
-    profiles: [],
-    invitations: [],
-    courses: [],
-    contacts: [],
-    lead_submissions: [],
-    deals: [],
-    tasks: [],
-    call_logs: [],
-    notes: [],
-    email_templates: [],
-    email_messages: [],
-    job_queue: [],
-    audit_events: [],
-    notifications: [],
-    integration_connections: [],
-    webhook_events: [],
-    suppression_records: [],
-    user_credentials: [],
-    sessions: [],
-    module_definitions: [],
-    field_definitions: [],
-    custom_records: [],
-  };
+  // Test if local directory is writable
+  try {
+    if (!fs.existsSync(localDir)) {
+      fs.mkdirSync(localDir, { recursive: true });
+    }
+    const testFile = path.join(localDir, `.test_${Date.now()}`);
+    fs.writeFileSync(testFile, 'test');
+    fs.unlinkSync(testFile);
+    return { dir: localDir, file: localFile, isReadOnly: false };
+  } catch {
+    // Local directory is read-only (e.g. Netlify/Lambda serverless)
+    const tmpDir = path.join(os.tmpdir(), '.crm_data');
+    const tmpFile = path.join(tmpDir, 'db.json');
+    try {
+      if (!fs.existsSync(tmpDir)) {
+        fs.mkdirSync(tmpDir, { recursive: true });
+      }
+    } catch {}
+    return { dir: tmpDir, file: tmpFile, isReadOnly: true };
+  }
 }
 
 export class FileDatabaseClient {
   private inMemoryCache: CRMDatabase | null = null;
+  private dbPaths: { dir: string; file: string; isReadOnly: boolean };
 
   constructor() {
-    this.ensureDataDirectory();
+    this.dbPaths = resolveDbPaths();
+    this.ensureInitialized();
   }
 
-  private ensureDataDirectory() {
-    if (!fs.existsSync(DATA_DIR)) {
-      fs.mkdirSync(DATA_DIR, { recursive: true });
-    }
-    if (!fs.existsSync(DB_FILE)) {
-      const empty = getEmptyDB();
-      fs.writeFileSync(DB_FILE, JSON.stringify(empty, null, 2), 'utf8');
-      this.inMemoryCache = empty;
+  private getDefaultDatabase(): CRMDatabase {
+    return JSON.parse(JSON.stringify(defaultDbData)) as CRMDatabase;
+  }
+
+  private ensureInitialized() {
+    try {
+      // If target file doesn't exist, try copying from local .crm_data/db.json or default seed
+      if (!fs.existsSync(this.dbPaths.file)) {
+        const localFile = path.join(process.cwd(), '.crm_data', 'db.json');
+        if (fs.existsSync(localFile)) {
+          try {
+            const content = fs.readFileSync(localFile, 'utf8');
+            fs.writeFileSync(this.dbPaths.file, content, 'utf8');
+            this.inMemoryCache = JSON.parse(content);
+            return;
+          } catch {}
+        }
+        const defaultData = this.getDefaultDatabase();
+        try {
+          fs.writeFileSync(this.dbPaths.file, JSON.stringify(defaultData, null, 2), 'utf8');
+        } catch {}
+        this.inMemoryCache = defaultData;
+      }
+    } catch {
+      this.inMemoryCache = this.getDefaultDatabase();
     }
   }
 
   public read(): CRMDatabase {
-    try {
-      if (!fs.existsSync(DB_FILE)) {
-        this.ensureDataDirectory();
-      }
-      const data = fs.readFileSync(DB_FILE, 'utf8');
-      const parsed = JSON.parse(data) as CRMDatabase;
-      if (!parsed.courses) parsed.courses = [];
-      if (!parsed.user_credentials) parsed.user_credentials = [];
-      if (!parsed.sessions) parsed.sessions = [];
-      if (!parsed.module_definitions) parsed.module_definitions = [];
-      if (!parsed.field_definitions) parsed.field_definitions = [];
-      if (!parsed.custom_records) parsed.custom_records = [];
-      this.inMemoryCache = parsed;
-      return parsed;
-    } catch (err) {
-      if (this.inMemoryCache) return this.inMemoryCache;
-      const empty = getEmptyDB();
-      this.write(empty);
-      return empty;
+    if (this.inMemoryCache && Array.isArray(this.inMemoryCache.profiles) && this.inMemoryCache.profiles.length > 0) {
+      return this.inMemoryCache;
     }
+
+    try {
+      if (fs.existsSync(this.dbPaths.file)) {
+        const data = fs.readFileSync(this.dbPaths.file, 'utf8');
+        const parsed = JSON.parse(data) as CRMDatabase;
+        if (Array.isArray(parsed.profiles) && parsed.profiles.length > 0) {
+          if (!parsed.courses) parsed.courses = [];
+          if (!parsed.user_credentials) parsed.user_credentials = [];
+          if (!parsed.sessions) parsed.sessions = [];
+          if (!parsed.module_definitions) parsed.module_definitions = [];
+          if (!parsed.field_definitions) parsed.field_definitions = [];
+          if (!parsed.custom_records) parsed.custom_records = [];
+          this.inMemoryCache = parsed;
+          return parsed;
+        }
+      }
+
+      // Check process.cwd() fallback
+      const localFile = path.join(process.cwd(), '.crm_data', 'db.json');
+      if (fs.existsSync(localFile)) {
+        const data = fs.readFileSync(localFile, 'utf8');
+        const parsed = JSON.parse(data) as CRMDatabase;
+        if (Array.isArray(parsed.profiles) && parsed.profiles.length > 0) {
+          this.inMemoryCache = parsed;
+          return parsed;
+        }
+      }
+    } catch (err) {
+      console.warn('Database file read warning, using bundled dataset:', err);
+    }
+
+    const fallback = this.getDefaultDatabase();
+    this.inMemoryCache = fallback;
+    return fallback;
   }
 
   public write(data: CRMDatabase): void {
-    this.ensureDataDirectory();
+    this.inMemoryCache = data;
     const content = JSON.stringify(data, null, 2);
+
     try {
-      const tempFile = path.join(DATA_DIR, `temp_${Date.now()}_${Math.random().toString(36).substring(7)}.json`);
-      fs.writeFileSync(tempFile, content, 'utf8');
+      if (!fs.existsSync(this.dbPaths.dir)) {
+        fs.mkdirSync(this.dbPaths.dir, { recursive: true });
+      }
+
+      const tempFile = path.join(
+        this.dbPaths.dir,
+        `temp_${Date.now()}_${Math.random().toString(36).substring(7)}.json`
+      );
+
       try {
-        fs.renameSync(tempFile, DB_FILE);
-      } catch (renameErr) {
-        // Fallback on Windows if rename is locked
-        fs.writeFileSync(DB_FILE, content, 'utf8');
-        try { fs.unlinkSync(tempFile); } catch (e) {}
+        fs.writeFileSync(tempFile, content, 'utf8');
+        fs.renameSync(tempFile, this.dbPaths.file);
+      } catch {
+        fs.writeFileSync(this.dbPaths.file, content, 'utf8');
+        try { fs.unlinkSync(tempFile); } catch {}
       }
     } catch (err) {
-      fs.writeFileSync(DB_FILE, content, 'utf8');
+      // In serverless environments, file write failure is non-fatal
+      console.warn('Persistent disk write warning (in-memory state preserved):', err);
     }
-    this.inMemoryCache = data;
   }
 
   public mutate<T>(fn: (db: CRMDatabase) => T): T {

@@ -17,8 +17,8 @@
       "auto_acknowledge_leads": true,
       "notify_owners_new_lead": true,
       "notify_agents_new_lead": true,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "profiles": [
@@ -30,13 +30,13 @@
       "phone": "+61 8 6102 2094",
       "role": "owner",
       "is_active": true,
-      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Jawad",
+      "avatar_url": "/dummy-avatar.svg",
       "preferences": {
         "theme": "light",
         "notifications": true
       },
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "user_sohail_002",
@@ -46,13 +46,13 @@
       "phone": "+61 8 6102 2094",
       "role": "owner",
       "is_active": true,
-      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sohail",
+      "avatar_url": "/dummy-avatar.svg",
       "preferences": {
         "theme": "light",
         "notifications": true
       },
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "user_ayesha_003",
@@ -62,13 +62,13 @@
       "phone": "+61 412 111 222",
       "role": "agent",
       "is_active": true,
-      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ayesha",
+      "avatar_url": "/dummy-avatar.svg",
       "preferences": {
         "theme": "light",
         "notifications": true
       },
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "user_maryam_004",
@@ -78,59 +78,50 @@
       "phone": "+61 413 333 444",
       "role": "agent",
       "is_active": true,
-      "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maryam",
+      "avatar_url": "/dummy-avatar.svg",
       "preferences": {
         "theme": "light",
         "notifications": true
       },
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "user_credentials": [
     {
       "user_id": "user_jawad_001",
       "email": "muhammad.jawad@pracpathways.com.au",
-      "password_hash": "20c4ac7d27f3342df61895fb65a6229db67609a70e4b9a1bfe0ec2a832fd52a8e0bdd80c2bbce99e54f0172cce20a3ec17aba9442fc755cad6218600d37572de",
-      "salt": "530c97d40d3c2ed669f4093b501bb086",
+      "password_hash": "a7b0110921460d168b7067a1b5417661a3847bb7493082804b878064693329f5068ceb5963275627d57ae3ea079926146e14165f7d128509e7d20891c25c09c8",
+      "salt": "94919c947b4e6d3a06602199b6b3cc29",
       "temp_password_active": false,
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "user_id": "user_sohail_002",
       "email": "sohail.sadiq@pracpathways.com.au",
-      "password_hash": "a76b1a970be9cd0f3872545d3fc4078d9b26ab18816df417a2bc4ac866170f9f4b7f6039abd389b8385a52811138fe94cb6ece5f320a2bd513fbc45a71c551b5",
-      "salt": "aeec739c692daf67c06776c8d5b1dc7e",
+      "password_hash": "191bf46fdc9f88f5130db81e48526f96d61bb27a02f0b4aeaae2eeb97598884170e28d47541145356915b2c63c567b92df8d45b2d85e58a05d4887996da2b7a9",
+      "salt": "81fae310c50628305045d17a7d3631d3",
       "temp_password_active": false,
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "user_id": "user_ayesha_003",
       "email": "ayesha.sohail@pracpathways.com.au",
-      "password_hash": "c5337a7d8b11035c65c9d937fabb378bb3487e9a5db1ae30c3f9e96a222179fe03abfff28e157964a68f9d6e0228db7d80aa790712fd455e93dbef8aa071f088",
-      "salt": "9e85058fe88ec9bb00fbceabc7049b30",
+      "password_hash": "0bc0f0d57366cf4b33b11ea32f6bfc9395c3a0ef846b861ea0a7ba6f2662b965bc3a560dc40bd960e3b5a817cc1fd0b58fcae37665cf3193dd3f2aefcdc323ac",
+      "salt": "7acb4ad0f8210bf42b26b6cbab302228",
       "temp_password_active": false,
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "user_id": "user_maryam_004",
       "email": "maryam.touqeer@pracpathways.com.au",
-      "password_hash": "bc0afe75c19ac557cb1dff7762571790223fa00a13f5399a5aef685b1cb43670395d0b48ff945f8ac9cf9b9b630326cc93e46557f5f45cfd3dbb4e89e0714646",
-      "salt": "03d330fc13776fa0e52ebfb87dc11f4b",
+      "password_hash": "7be446e14faa6530db7c106d12a7bfecae65f1a0c818442e3da142b71e1f1d509cca8a260940875b1ccc92ae15be4067f01d8619aff0088ec0c916f89ade582e",
+      "salt": "12d1afd9ce974d935080f861f83d0e4a",
       "temp_password_active": false,
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
-  "sessions": [
-    {
-      "token": "706f4b44960cabd1fa2911838b8a1c9383486c4eb5bd053f8c3da2b9306e69db",
-      "user_id": "user_sohail_002",
-      "email": "sohail.sadiq@pracpathways.com.au",
-      "role": "owner",
-      "expires_at": "2026-10-30T09:03:07.801Z",
-      "created_at": "2026-10-23T09:03:07.802Z"
-    }
-  ],
+  "sessions": [],
   "courses": [
     {
       "id": "course_cpc40120_self",
@@ -142,8 +133,8 @@
       "is_active": true,
       "short_description": "Nationally accredited qualification (19 units) for tradies stepping up to site supervision, small-to-medium project coordination, and builder licensing pathways in Australia.",
       "email_information": "CPC40120 Certificate IV in Building and Construction is tailored for tradespeople seeking career advancement into site management or builder contractor licensing. Study online with 24/7 LMS access.",
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "course_cpc40120_blended",
@@ -155,8 +146,8 @@
       "is_active": true,
       "short_description": "Structured 36-week delivery format featuring scheduled online workshops and guided assessor mentoring for building practitioners.",
       "email_information": "Structured blended delivery includes weekly interactive trainer-led sessions alongside comprehensive online study materials.",
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "course_cpc50220_self",
@@ -168,8 +159,8 @@
       "is_active": true,
       "short_description": "Advanced qualification (27 units) for experienced trades, project managers, and builders pursuing commercial/residential contractor licensing and construction leadership.",
       "email_information": "CPC50220 Diploma of Building and Construction offers advanced training in building codes, project administration, and site management for building work contractor applications.",
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "course_cpc50220_blended",
@@ -181,8 +172,8 @@
       "is_active": true,
       "short_description": "Comprehensive 62-week guided curriculum with direct trainer mentoring and industry scenario workshops.",
       "email_information": "Our structured Diploma program guides you through complex construction contracts, structural principles, and estimating.",
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "invitations": [
@@ -193,10 +184,10 @@
       "full_name": "Muhammad Jawad",
       "role": "owner",
       "token": "jawad-setup-token-98124",
-      "expires_at": "2026-10-30T07:39:51.998Z",
-      "accepted_at": "2026-10-23T07:39:51.480Z",
+      "expires_at": "2026-11-09T05:31:33.371Z",
+      "accepted_at": "2026-11-02T05:31:33.131Z",
       "invited_by": "user_jawad_001",
-      "created_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "invite_002",
@@ -205,10 +196,10 @@
       "full_name": "Sohail Sadiq",
       "role": "owner",
       "token": "sohail-setup-token-74129",
-      "expires_at": "2026-10-30T07:39:51.998Z",
-      "accepted_at": "2026-10-23T07:39:51.480Z",
+      "expires_at": "2026-11-09T05:31:33.371Z",
+      "accepted_at": "2026-11-02T05:31:33.131Z",
       "invited_by": "user_jawad_001",
-      "created_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "invite_003",
@@ -217,10 +208,10 @@
       "full_name": "Ayesha Sohail",
       "role": "agent",
       "token": "ayesha-setup-token-38102",
-      "expires_at": "2026-10-30T07:39:51.998Z",
-      "accepted_at": "2026-10-23T07:39:51.480Z",
+      "expires_at": "2026-11-09T05:31:33.371Z",
+      "accepted_at": "2026-11-02T05:31:33.131Z",
       "invited_by": "user_jawad_001",
-      "created_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "invite_004",
@@ -229,10 +220,10 @@
       "full_name": "Maryam Touqeer",
       "role": "agent",
       "token": "maryam-setup-token-65912",
-      "expires_at": "2026-10-30T07:39:51.998Z",
-      "accepted_at": "2026-10-23T07:39:51.480Z",
+      "expires_at": "2026-11-09T05:31:33.371Z",
+      "accepted_at": "2026-11-02T05:31:33.131Z",
       "invited_by": "user_jawad_001",
-      "created_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "contacts": [
@@ -258,10 +249,10 @@
       ],
       "assigned_agent_id": "user_ayesha_003",
       "lifecycle_status": "lead",
-      "first_enquiry_at": "2026-10-23T03:39:51.998Z",
-      "latest_enquiry_at": "2026-10-23T03:39:51.998Z",
-      "last_contacted_at": "2026-10-23T05:39:51.998Z",
-      "next_follow_up_at": "2026-10-23T09:39:51.998Z",
+      "first_enquiry_at": "2026-11-02T01:31:33.371Z",
+      "latest_enquiry_at": "2026-11-02T01:31:33.371Z",
+      "last_contacted_at": "2026-11-02T03:31:33.371Z",
+      "next_follow_up_at": "2026-11-02T07:31:33.371Z",
       "do_not_call": false,
       "email_suppressed": false,
       "communication_preferences": {
@@ -277,8 +268,8 @@
         "white_card_holder": true,
         "owner_financial_notes": "Approved payment plan - $1,500 deposit received; eligible for SA subsidised concession."
       },
-      "created_at": "2026-10-23T03:39:51.998Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T01:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "contact_002",
@@ -302,9 +293,9 @@
       ],
       "assigned_agent_id": "user_maryam_004",
       "lifecycle_status": "lead",
-      "first_enquiry_at": "2026-10-22T23:39:51.998Z",
-      "latest_enquiry_at": "2026-10-22T23:39:51.998Z",
-      "next_follow_up_at": "2026-10-23T12:39:51.998Z",
+      "first_enquiry_at": "2026-11-01T21:31:33.371Z",
+      "latest_enquiry_at": "2026-11-01T21:31:33.371Z",
+      "next_follow_up_at": "2026-11-02T10:31:33.371Z",
       "do_not_call": false,
       "email_suppressed": false,
       "communication_preferences": {
@@ -318,8 +309,8 @@
         "white_card_holder": true,
         "owner_financial_notes": "Requested fee-for-service quote with invoice split over 3 milestones."
       },
-      "created_at": "2026-10-22T23:39:51.998Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-01T21:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "contact_003",
@@ -343,10 +334,10 @@
       ],
       "assigned_agent_id": "user_ayesha_003",
       "lifecycle_status": "contact",
-      "first_enquiry_at": "2026-10-21T07:39:51.999Z",
-      "latest_enquiry_at": "2026-10-22T07:39:51.999Z",
-      "last_contacted_at": "2026-10-22T19:39:51.999Z",
-      "next_follow_up_at": "2026-10-24T07:39:51.999Z",
+      "first_enquiry_at": "2026-10-31T05:31:33.371Z",
+      "latest_enquiry_at": "2026-11-01T05:31:33.371Z",
+      "last_contacted_at": "2026-11-01T17:31:33.371Z",
+      "next_follow_up_at": "2026-11-03T05:31:33.371Z",
       "do_not_call": false,
       "email_suppressed": false,
       "conflict_flag": false,
@@ -356,8 +347,8 @@
         "prior_education_level": "Year 12",
         "white_card_holder": true
       },
-      "created_at": "2026-10-21T07:39:51.999Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-10-31T05:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "contact_004",
@@ -381,9 +372,9 @@
       ],
       "assigned_agent_id": "user_maryam_004",
       "lifecycle_status": "customer",
-      "first_enquiry_at": "2026-10-18T07:39:51.999Z",
-      "latest_enquiry_at": "2026-10-20T07:39:51.999Z",
-      "last_contacted_at": "2026-10-22T07:39:51.999Z",
+      "first_enquiry_at": "2026-10-28T05:31:33.371Z",
+      "latest_enquiry_at": "2026-10-30T05:31:33.371Z",
+      "last_contacted_at": "2026-11-01T05:31:33.371Z",
       "do_not_call": false,
       "email_suppressed": false,
       "conflict_flag": false,
@@ -394,8 +385,8 @@
         "white_card_holder": true,
         "owner_financial_notes": "Course fee $6,450 paid in full upfront."
       },
-      "created_at": "2026-10-18T07:39:51.999Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-10-28T05:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "contact_005",
@@ -418,8 +409,8 @@
         "Fast Track"
       ],
       "lifecycle_status": "lead",
-      "first_enquiry_at": "2026-10-23T06:39:51.999Z",
-      "latest_enquiry_at": "2026-10-23T06:39:51.999Z",
+      "first_enquiry_at": "2026-11-02T04:31:33.371Z",
+      "latest_enquiry_at": "2026-11-02T04:31:33.371Z",
       "do_not_call": false,
       "email_suppressed": false,
       "conflict_flag": false,
@@ -428,8 +419,8 @@
         "prior_education_level": "Certificate III",
         "white_card_holder": true
       },
-      "created_at": "2026-10-23T06:39:51.999Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T04:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "contact_006",
@@ -453,8 +444,8 @@
       "assigned_agent_id": "user_ayesha_003",
       "lifecycle_status": "archived",
       "is_archived": true,
-      "first_enquiry_at": "2026-10-03T07:39:51.999Z",
-      "latest_enquiry_at": "2026-10-05T07:39:51.999Z",
+      "first_enquiry_at": "2026-10-13T05:31:33.371Z",
+      "latest_enquiry_at": "2026-10-15T05:31:33.371Z",
       "do_not_call": false,
       "email_suppressed": false,
       "conflict_flag": false,
@@ -464,8 +455,8 @@
         "white_card_holder": false,
         "owner_financial_notes": "Student deferred enrolment due to interstate relocation."
       },
-      "created_at": "2026-10-03T07:39:51.999Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-10-13T05:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "lead_submissions": [
@@ -494,12 +485,12 @@
         "message": "Looking to get my residential builder licence in South Australia."
       },
       "consent_text": "I agree to be contacted by Practical Training Pathways regarding course enrolment.",
-      "consent_timestamp": "2026-10-23T03:39:51.999Z",
+      "consent_timestamp": "2026-11-02T01:31:33.371Z",
       "idempotency_key": "web_form_sub_lachlan_01",
       "is_test": false,
-      "submission_timestamp": "2026-10-23T03:39:51.999Z",
-      "processed_at": "2026-10-23T03:39:51.999Z",
-      "created_at": "2026-10-23T03:39:51.999Z"
+      "submission_timestamp": "2026-11-02T01:31:33.371Z",
+      "processed_at": "2026-11-02T01:31:33.371Z",
+      "created_at": "2026-11-02T01:31:33.371Z"
     },
     {
       "id": "lead_sub_002",
@@ -526,9 +517,9 @@
       },
       "idempotency_key": "meta_lead_9921448821",
       "is_test": false,
-      "submission_timestamp": "2026-10-22T23:39:51.999Z",
-      "processed_at": "2026-10-22T23:39:51.999Z",
-      "created_at": "2026-10-22T23:39:51.999Z"
+      "submission_timestamp": "2026-11-01T21:31:33.371Z",
+      "processed_at": "2026-11-01T21:31:33.371Z",
+      "created_at": "2026-11-01T21:31:33.371Z"
     },
     {
       "id": "lead_sub_003",
@@ -553,9 +544,9 @@
       },
       "idempotency_key": "google_lead_884102941",
       "is_test": false,
-      "submission_timestamp": "2026-10-21T07:39:51.999Z",
-      "processed_at": "2026-10-21T07:39:51.999Z",
-      "created_at": "2026-10-21T07:39:51.999Z"
+      "submission_timestamp": "2026-10-31T05:31:33.371Z",
+      "processed_at": "2026-10-31T05:31:33.371Z",
+      "created_at": "2026-10-31T05:31:33.371Z"
     }
   ],
   "deals": [
@@ -569,10 +560,10 @@
       "course_code": "CPC40120",
       "course_title": "Certificate IV in Building and Construction (Building)",
       "delivery_variant": "Self-Paced Online",
-      "expected_close_date": "2026-11-06",
+      "expected_close_date": "2026-11-16",
       "notes": "Discussed self-paced flexibility and trade experience recognition. Highly keen.",
-      "created_at": "2026-10-23T05:39:51.999Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T03:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "deal_002",
@@ -584,10 +575,10 @@
       "course_code": "CPC50220",
       "course_title": "Diploma of Building and Construction (Building)",
       "delivery_variant": "Blended / Structured Delivery",
-      "expected_close_date": "2026-11-12",
+      "expected_close_date": "2026-11-22",
       "notes": "Enquired about upcoming structured virtual workshop schedules.",
-      "created_at": "2026-10-23T01:39:51.999Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-01T23:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "deal_003",
@@ -599,10 +590,10 @@
       "course_code": "CPC40120",
       "course_title": "Certificate IV in Building and Construction (Building)",
       "delivery_variant": "Self-Paced Online",
-      "expected_close_date": "2026-11-02",
+      "expected_close_date": "2026-11-12",
       "notes": "USI number confirmed. Awaiting upload of photo ID and trade qualification.",
-      "created_at": "2026-10-22T07:39:51.999Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-01T05:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "deal_004",
@@ -616,10 +607,10 @@
       "delivery_variant": "Self-Paced Online",
       "value": 4500,
       "currency": "AUD",
-      "expected_close_date": "2026-10-22",
+      "expected_close_date": "2026-11-01",
       "notes": "Enrolment finalized. LMS credentials issued for online self-paced study.",
-      "created_at": "2026-10-19T07:39:51.999Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-10-29T05:31:33.371Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "tasks": [
@@ -631,12 +622,11 @@
       "assigned_agent_id": "user_ayesha_003",
       "title": "Follow up call on CPC40120 online enrolment pack",
       "description": "Verify if candidate received course guide and answer builder licensing questions.",
-      "due_date": "2026-10-23T09:39:51.999Z",
+      "due_date": "2026-11-02T07:31:33.371Z",
       "priority": "high",
-      "status": "completed",
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T09:04:05.344Z",
-      "completed_at": "2026-10-23T09:04:05.342Z"
+      "status": "pending",
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "task_002",
@@ -646,12 +636,11 @@
       "assigned_agent_id": "user_maryam_004",
       "title": "Initial consultation call: CPC50220 Diploma delivery options",
       "description": "Walk through blended timetable and assess prior construction experience.",
-      "due_date": "2026-10-23T12:39:51.999Z",
+      "due_date": "2026-11-02T10:31:33.371Z",
       "priority": "urgent",
-      "status": "completed",
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T09:04:04.912Z",
-      "completed_at": "2026-10-23T09:04:04.910Z"
+      "status": "pending",
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "task_003",
@@ -661,12 +650,11 @@
       "assigned_agent_id": "user_ayesha_003",
       "title": "Check document uploads for David Campbell",
       "description": "Check student portal for ID and carpentry trade papers.",
-      "due_date": "2026-10-24T07:39:51.999Z",
+      "due_date": "2026-11-03T05:31:33.371Z",
       "priority": "medium",
-      "status": "completed",
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T09:04:06.348Z",
-      "completed_at": "2026-10-23T09:04:06.346Z"
+      "status": "pending",
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "call_logs": [
@@ -675,26 +663,26 @@
       "organization_id": "org_pracpathways_001",
       "contact_id": "contact_001",
       "agent_id": "user_ayesha_003",
-      "timestamp": "2026-10-23T05:39:51.999Z",
+      "timestamp": "2026-11-02T03:31:33.371Z",
       "outcome": "connected",
       "duration_seconds": 245,
       "notes": "Spoke with Lachlan. Highly interested in the self-paced CPC40120 Certificate IV format to balance around current carpentry jobs.",
       "next_action": "Email course information pack and follow up",
-      "follow_up_date": "2026-10-23T09:39:51.999Z",
-      "created_at": "2026-10-23T05:39:51.999Z"
+      "follow_up_date": "2026-11-02T07:31:33.371Z",
+      "created_at": "2026-11-02T03:31:33.371Z"
     },
     {
       "id": "call_002",
       "organization_id": "org_pracpathways_001",
       "contact_id": "contact_003",
       "agent_id": "user_ayesha_003",
-      "timestamp": "2026-10-22T19:39:51.999Z",
+      "timestamp": "2026-11-01T17:31:33.371Z",
       "outcome": "interested",
       "duration_seconds": 410,
       "notes": "Discussed building contractor licence requirements in South Australia. Explained unit breakdown.",
       "next_action": "Send enrolment checklist",
-      "follow_up_date": "2026-10-24T07:39:51.999Z",
-      "created_at": "2026-10-22T19:39:51.999Z"
+      "follow_up_date": "2026-11-03T05:31:33.371Z",
+      "created_at": "2026-11-01T17:31:33.371Z"
     }
   ],
   "notes": [
@@ -704,8 +692,8 @@
       "contact_id": "contact_001",
       "author_id": "user_ayesha_003",
       "content": "Candidate has 5 years on site in Adelaide. Enquiring specifically about CPC40120 units for CBS builder licence application.",
-      "created_at": "2026-10-23T05:39:51.999Z",
-      "updated_at": "2026-10-23T05:39:51.999Z"
+      "created_at": "2026-11-02T03:31:33.371Z",
+      "updated_at": "2026-11-02T03:31:33.371Z"
     }
   ],
   "email_templates": [
@@ -725,8 +713,8 @@
       ],
       "is_system": true,
       "is_active": true,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "tpl_course_info",
@@ -744,8 +732,8 @@
       ],
       "is_system": false,
       "is_active": true,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "tpl_appt_confirm",
@@ -761,8 +749,8 @@
       ],
       "is_system": true,
       "is_active": true,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "email_messages": [],
@@ -785,20 +773,7 @@
           "CPC50220"
         ]
       },
-      "created_at": "2026-10-23T07:39:51.480Z"
-    },
-    {
-      "id": "audit_1792746187808_hj6p7g",
-      "created_at": "2026-10-23T09:03:07.808Z",
-      "organization_id": "org_pracpathways_001",
-      "actor_name": "Sohail Sadiq",
-      "action": "login_success",
-      "target_type": "user",
-      "target_id": "user_sohail_002",
-      "details": {
-        "email": "sohail.sadiq@pracpathways.com.au",
-        "role": "owner"
-      }
+      "created_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "notifications": [],
@@ -816,8 +791,8 @@
         ],
         "honeypot_field": "website_hp"
       },
-      "last_verified_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "last_verified_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "conn_meta_002",
@@ -830,7 +805,7 @@
         "webhook_url": "/api/webhooks/meta"
       },
       "last_error": "Requires Meta Page Access Token and App Secret configuration.",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "conn_google_003",
@@ -842,7 +817,7 @@
         "webhook_url": "/api/webhooks/google-ads"
       },
       "last_error": "Requires Google Ads Lead Form webhook key setup.",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "conn_email_004",
@@ -856,7 +831,7 @@
         "dmarc_status": "pending_dns"
       },
       "last_error": "Requires domain DNS verification (SPF/DKIM/DMARC) in Resend/Postmark.",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "conn_elementor_005",
@@ -883,12 +858,12 @@
         },
         "auto_create_followup_task": true,
         "suppress_test_emails": true,
-        "last_received_at": "2026-10-23T07:39:51.480Z",
-        "last_success_at": "2026-10-23T07:39:51.480Z"
+        "last_received_at": "2026-11-02T05:31:33.131Z",
+        "last_success_at": "2026-11-02T05:31:33.131Z"
       },
-      "last_verified_at": "2026-10-23T07:39:51.480Z",
-      "last_activity_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "last_verified_at": "2026-11-02T05:31:33.131Z",
+      "last_activity_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "conn_3cx_006",
@@ -911,13 +886,13 @@
           "call_journaling": true,
           "screen_pop": true
         },
-        "last_call_received_at": "2026-10-23T07:39:51.480Z",
+        "last_call_received_at": "2026-11-02T05:31:33.131Z",
         "last_call_id": "3cx_call_init_001",
         "last_call_agent": "Ayesha Sohail"
       },
-      "last_verified_at": "2026-10-23T07:39:51.480Z",
-      "last_activity_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "last_verified_at": "2026-11-02T05:31:33.131Z",
+      "last_activity_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "webhook_events": [],
@@ -943,8 +918,8 @@
         "assigned_agent",
         "lifecycle_status"
       ],
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "mod_leads",
@@ -966,8 +941,8 @@
         "assigned_agent",
         "status"
       ],
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "mod_deals",
@@ -988,8 +963,8 @@
         "assigned_agent",
         "expected_close_date"
       ],
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "mod_tasks",
@@ -1010,8 +985,8 @@
         "status",
         "assigned_agent"
       ],
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "mod_courses",
@@ -1031,8 +1006,8 @@
         "delivery_variant",
         "is_active"
       ],
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "mod_employers",
@@ -1053,8 +1028,8 @@
         "contact_phone",
         "industry_sector"
       ],
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "field_definitions": [
@@ -1099,8 +1074,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_con_employer",
@@ -1121,8 +1096,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_con_usi",
@@ -1143,8 +1118,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_con_education",
@@ -1187,8 +1162,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_con_white_card",
@@ -1209,8 +1184,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_con_owner_notes",
@@ -1231,8 +1206,8 @@
       "is_owner_only_edit": true,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_emp_name",
@@ -1252,8 +1227,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_emp_contact",
@@ -1273,8 +1248,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_emp_email",
@@ -1294,8 +1269,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_emp_phone",
@@ -1315,8 +1290,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "fld_emp_sector",
@@ -1353,8 +1328,8 @@
       "is_owner_only_edit": false,
       "is_system": false,
       "is_archived": false,
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ],
   "custom_records": [
@@ -1373,8 +1348,8 @@
       },
       "is_archived": false,
       "created_by": "user_jawad_001",
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     },
     {
       "id": "rec_emp_002",
@@ -1391,8 +1366,8 @@
       },
       "is_archived": false,
       "created_by": "user_sohail_002",
-      "created_at": "2026-10-23T07:39:51.480Z",
-      "updated_at": "2026-10-23T07:39:51.480Z"
+      "created_at": "2026-11-02T05:31:33.131Z",
+      "updated_at": "2026-11-02T05:31:33.131Z"
     }
   ]
 }

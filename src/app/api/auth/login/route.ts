@@ -30,15 +30,19 @@ export async function POST(req: NextRequest) {
 
     const isValid = verifyPassword(password, credential.password_hash, credential.salt);
     if (!isValid) {
-      // Audit failed login attempt
-      db.auditEvents.create({
-        organization_id: profile.organization_id,
-        actor_name: profile.full_name,
-        action: 'login_failed',
-        target_type: 'user',
-        target_id: profile.id,
-        details: { email: normEmail, reason: 'incorrect_password' },
-      });
+      // Audit failed login attempt (safely wrapped)
+      try {
+        db.auditEvents.create({
+          organization_id: profile.organization_id,
+          actor_name: profile.full_name,
+          action: 'login_failed',
+          target_type: 'user',
+          target_id: profile.id,
+          details: { email: normEmail, reason: 'incorrect_password' },
+        });
+      } catch (err) {
+        console.warn('Audit event logging warning:', err);
+      }
 
       return NextResponse.json({ error: 'Invalid email or password' }, { status: 401 });
     }
@@ -46,15 +50,19 @@ export async function POST(req: NextRequest) {
     // Create cryptographically secure session
     const session = createSessionRecord(profile);
 
-    // Record successful audit event
-    db.auditEvents.create({
-      organization_id: profile.organization_id,
-      actor_name: profile.full_name,
-      action: 'login_success',
-      target_type: 'user',
-      target_id: profile.id,
-      details: { email: normEmail, role: profile.role },
-    });
+    // Record successful audit event (safely wrapped)
+    try {
+      db.auditEvents.create({
+        organization_id: profile.organization_id,
+        actor_name: profile.full_name,
+        action: 'login_success',
+        target_type: 'user',
+        target_id: profile.id,
+        details: { email: normEmail, role: profile.role },
+      });
+    } catch (err) {
+      console.warn('Audit event logging warning:', err);
+    }
 
     const response = NextResponse.json({
       success: true,

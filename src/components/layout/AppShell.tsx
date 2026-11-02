@@ -215,7 +215,7 @@ export function AppShell({ currentUser, children }: AppShellProps) {
         <div className="flex items-center justify-between p-2.5 rounded-2xl bg-slate-50 border border-slate-200">
           <div className="flex items-center gap-2.5 min-w-0">
             <img 
-              src={currentUser.avatar_url || 'https://api.dicebear.com/7.x/avataaars/svg?seed=PTP'} 
+              src={(!currentUser.avatar_url || currentUser.avatar_url.includes('dicebear')) ? '/dummy-avatar.svg' : currentUser.avatar_url} 
               alt={currentUser.full_name} 
               className="w-9 h-9 rounded-full bg-slate-200 border border-slate-300 shrink-0"
             />

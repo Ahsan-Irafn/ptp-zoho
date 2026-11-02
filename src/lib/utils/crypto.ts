@@ -83,3 +83,43 @@ export function verifyPassword(password: string, hash: string, salt: string): bo
   }
 }
 
+
+const SESSION_SECRET = process.env.SESSION_SECRET || 'ptp_production_auth_secret_adelaide_2026';
+
+export interface SignedSessionPayload {
+  userId: string;
+  email: string;
+  role: string;
+  expiresAt: string;
+}
+
+export function generateSignedSessionToken(payload: SignedSessionPayload): string {
+  const jsonStr = JSON.stringify(payload);
+  const base64Payload = Buffer.from(jsonStr).toString('base64url');
+  const hmac = crypto.createHmac('sha256', SESSION_SECRET);
+  const sig = hmac.update(base64Payload).digest('base64url');
+  return `${base64Payload}.${sig}`;
+}
+
+export function verifySignedSessionToken(token: string): SignedSessionPayload | null {
+  try {
+    if (!token || !token.includes('.')) return null;
+    const [base64Payload, sig] = token.split('.');
+    if (!base64Payload || !sig) return null;
+
+    const hmac = crypto.createHmac('sha256', SESSION_SECRET);
+    const expectedSig = hmac.update(base64Payload).digest('base64url');
+
+    const sigBuf = Buffer.from(sig);
+    const expBuf = Buffer.from(expectedSig);
+    if (sigBuf.length !== expBuf.length || !crypto.timingSafeEqual(sigBuf, expBuf)) {
+      return null;
+    }
+
+    const jsonStr = Buffer.from(base64Payload, 'base64url').toString('utf8');
+    const parsed = JSON.parse(jsonStr) as SignedSessionPayload;
+    return parsed;
+  } catch {
+    return null;
+  }
+}

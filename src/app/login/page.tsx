@@ -3,7 +3,14 @@
 import React, { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import { Lock, Mail, ShieldCheck, ArrowRight, AlertCircle, Building2 } from 'lucide-react';
+import { Lock, Mail, ShieldCheck, ArrowRight, AlertCircle, Building2, Eye, EyeOff, UserCheck } from 'lucide-react';
+
+const TEAM_ACCOUNTS = [
+  { name: 'Sohail Sadiq', role: 'Owner', email: 'sohail.sadiq@pracpathways.com.au', password: 'SohailPTP2026!' },
+  { name: 'Muhammad Jawad', role: 'Owner', email: 'muhammad.jawad@pracpathways.com.au', password: 'JawadPTP2026!' },
+  { name: 'Ayesha Sohail', role: 'Calling Agent', email: 'ayesha.sohail@pracpathways.com.au', password: 'AyeshaPTP2026!' },
+  { name: 'Maryam Touqeer', role: 'Calling Agent', email: 'maryam.touqeer@pracpathways.com.au', password: 'MaryamPTP2026!' },
+];
 
 export default function LoginPage() {
   const router = useRouter();
@@ -12,6 +19,7 @@ export default function LoginPage() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -24,7 +32,7 @@ export default function LoginPage() {
       const res = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email: email.trim(), password }),
       });
 
       const data = await res.json();
@@ -39,6 +47,12 @@ export default function LoginPage() {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleSelectAccount = (acc: typeof TEAM_ACCOUNTS[0]) => {
+    setEmail(acc.email);
+    setPassword(acc.password);
+    setError('');
   };
 
   return (
@@ -72,6 +86,37 @@ export default function LoginPage() {
             </div>
           </div>
         )}
+
+        {/* Quick Select Authorized Account */}
+        <div className="bg-slate-50/80 border border-slate-200 rounded-2xl p-3.5 space-y-2">
+          <div className="flex items-center justify-between">
+            <span className="text-[12px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+              <UserCheck className="w-3.5 h-3.5 text-[#20409A]" />
+              Quick Fill Authorized Team Account
+            </span>
+            <span className="text-[11px] text-slate-400">Click to autofill</span>
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            {TEAM_ACCOUNTS.map(acc => {
+              const isSelected = email.toLowerCase() === acc.email.toLowerCase();
+              return (
+                <button
+                  key={acc.email}
+                  type="button"
+                  onClick={() => handleSelectAccount(acc)}
+                  className={`text-left p-2.5 rounded-xl border transition-all text-xs flex flex-col justify-between ${
+                    isSelected
+                      ? 'bg-blue-50/80 border-[#20409A] shadow-sm ring-1 ring-[#20409A]'
+                      : 'bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-100/60'
+                  }`}
+                >
+                  <span className="font-bold text-slate-800 truncate">{acc.name}</span>
+                  <span className="text-[11px] text-[#20409A] font-semibold">{acc.role}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
 
         {/* Authentication Form */}
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -108,14 +153,22 @@ export default function LoginPage() {
             <div className="relative">
               <Lock className="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
               <input
-                type="password"
+                type={showPassword ? 'text' : 'password'}
                 required
                 autoComplete="current-password"
                 placeholder="Enter your individual password"
                 value={password}
                 onChange={e => setPassword(e.target.value)}
-                className="w-full bg-white border border-slate-300 rounded-xl pl-12 pr-4 py-3 text-[16px] text-slate-900 placeholder:text-slate-400 focus:border-[#20409A] focus:ring-4 focus:ring-blue-100 focus:outline-none transition-all"
+                className="w-full bg-white border border-slate-300 rounded-xl pl-12 pr-12 py-3 text-[16px] text-slate-900 placeholder:text-slate-400 focus:border-[#20409A] focus:ring-4 focus:ring-blue-100 focus:outline-none transition-all"
               />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 focus:outline-none"
+                title={showPassword ? 'Hide password' : 'Show password'}
+              >
+                {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+              </button>
             </div>
           </div>
 

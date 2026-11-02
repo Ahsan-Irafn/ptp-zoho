@@ -134,7 +134,7 @@ export function TeamClient({
                   <tr key={member.id} className="hover:bg-slate-50/80 transition-colors">
                     <td className="py-4 px-5">
                       <div className="flex items-center gap-3">
-                        <img src={member.avatar_url} alt={member.full_name} className="w-9 h-9 rounded-full bg-slate-200 object-cover" />
+                        <img src={(!member.avatar_url || member.avatar_url.includes('dicebear')) ? '/dummy-avatar.svg' : member.avatar_url} alt={member.full_name} className="w-9 h-9 rounded-full bg-slate-200 object-cover" />
                         <div>
                           <div className="font-bold text-slate-900 text-base">{member.full_name}</div>
                           <div className="text-xs text-slate-500 font-mono">ID: {member.id}</div>
