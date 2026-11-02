@@ -34,6 +34,8 @@ import {
 interface EnrichedSubmission extends LeadSubmission {
   contact?: Contact;
   assignedAgentName?: string;
+  unrecognized_course_name?: string;
+  submission_data?: Record<string, any>;
 }
 
 interface LeadsClientProps {
@@ -182,7 +184,7 @@ export function LeadsClient({
         const contactMatch = 
           contact?.full_name.toLowerCase().includes(q) ||
           contact?.email.toLowerCase().includes(q) ||
-          contact?.phone_raw.toLowerCase().includes(q);
+          contact?.phone_raw?.toLowerCase().includes(q);
         
         const subMatch = 
           (sub.course_interest && sub.course_interest.toLowerCase().includes(q)) ||
@@ -525,7 +527,7 @@ export function LeadsClient({
                             </span>
                             {contact.phone_raw && (
                               <span 
-                                onClick={() => handleCopy(contact.phone_raw, `ph_${sub.id}`)}
+                                onClick={() => contact.phone_raw && handleCopy(contact.phone_raw, `ph_${sub.id}`)}
                                 className="hover:text-blue-600 cursor-pointer inline-flex items-center gap-1"
                                 title="Click to copy phone"
                               >

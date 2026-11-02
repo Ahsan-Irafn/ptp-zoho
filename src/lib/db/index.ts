@@ -1033,7 +1033,7 @@ export const db = {
       return fileDb.read().module_definitions.find(m => m.organization_id === orgId && m.key === key);
     },
 
-    create: (moduleDef: ModuleDefinition): ModuleDefinition => {
+    create: (moduleDef: ModuleDefinition, actorId?: string, actorName?: string): ModuleDefinition => {
       return fileDb.mutate(data => {
         // Enforce valid slug key
         const cleanKey = moduleDef.key.toLowerCase().replace(/[^a-z0-9_]/g, '_');
@@ -1068,7 +1068,7 @@ export const db = {
       });
     },
 
-    update: (orgId: string, key: string, updates: Partial<ModuleDefinition>): ModuleDefinition | undefined => {
+    update: (orgId: string, key: string, updates: Partial<ModuleDefinition>, actorId?: string, actorName?: string): ModuleDefinition | undefined => {
       return fileDb.mutate(data => {
         const mod = data.module_definitions.find(m => m.organization_id === orgId && m.key === key);
         if (!mod) return undefined;
@@ -1095,7 +1095,7 @@ export const db = {
       });
     },
 
-    archive: (orgId: string, key: string): boolean => {
+    archive: (orgId: string, key: string, actorId?: string, actorName?: string): boolean => {
       return fileDb.mutate(data => {
         const mod = data.module_definitions.find(m => m.organization_id === orgId && m.key === key);
         if (!mod) return false;

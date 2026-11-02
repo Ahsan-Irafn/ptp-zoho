@@ -65,7 +65,8 @@ export type IntegrationStatus =
   | 'configuration_incomplete' 
   | 'connected_and_verified' 
   | 'authentication_failed' 
-  | 'permission_licence_limitation' 
+  | 'permission_licence_limitation'
+  | 'permission_license_limitation' 
   | 'processing_error'
   | 'not_connected'
   | 'token_expired' 
@@ -144,6 +145,14 @@ export interface Contact {
   email_normalized: string;
   phone_raw?: string;
   phone_normalized?: string;
+  phone?: string;
+  first_name?: string;
+  last_name?: string;
+  lifecycle_stage?: string;
+  lead_status?: string;
+  notes?: string;
+  capture_channel?: string;
+  marketing_source?: string;
   company?: string;
   city?: string;
   country?: string;

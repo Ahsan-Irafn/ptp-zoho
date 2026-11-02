@@ -204,7 +204,7 @@ describe('Practical Training Pathways CRM — 3CX & WordPress Elementor Acceptan
         isTest: false,
       });
 
-      assert.ok(repeat.status === 'linked_existing' || repeat.status === 'repeat_enquiry', 'Status must indicate existing contact link');
+      assert.ok(repeat.status === 'linked_existing' || (repeat.status as any) === 'repeat_enquiry', 'Status must indicate existing contact link');
       assert.strictEqual(repeat.contact.id, initial.contact.id, 'Must link to existing contact');
       assert.strictEqual(repeat.contact.assigned_agent_id, initialAgentId, 'Must preserve existing assigned agent');
       assert.strictEqual(repeat.matchedCourse?.code, 'CPC50220');

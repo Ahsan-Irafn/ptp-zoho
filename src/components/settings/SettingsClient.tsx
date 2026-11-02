@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import React, { useState } from 'react';
 import { Organization } from '@/types/crm';
 import { Settings, Save, CheckCircle2, ShieldCheck, Building, Mail, Clock, DollarSign } from 'lucide-react';

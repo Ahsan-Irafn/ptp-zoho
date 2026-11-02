@@ -1,4 +1,4 @@
-import { fileDb } from './file-db';
+import { fileDb, CRMDatabase } from './file-db';
 import { normalizeEmail, normalizePhone } from '../utils/normalization';
 import { hashPassword } from '../utils/crypto';
 
@@ -21,7 +21,7 @@ export function runSeed() {
   const ayeshaCreds = hashPassword('AyeshaPTP2026!');
   const maryamCreds = hashPassword('MaryamPTP2026!');
 
-  const initialDb = {
+  const initialDb: CRMDatabase = {
     organizations: [
       {
         id: orgId,

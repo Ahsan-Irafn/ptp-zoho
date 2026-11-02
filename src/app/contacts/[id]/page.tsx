@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { requireUser } from '@/lib/auth/session';
-import { db } from '@/lib/db';
+import { db, sanitizeRecordForRole } from '@/lib/db';
 import { permissions } from '@/lib/auth/permissions';
 import { ContactDetailClient } from '@/components/contacts/ContactDetailClient';
 import { ShieldAlert, ArrowLeft } from 'lucide-react';

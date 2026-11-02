@@ -1,6 +1,6 @@
 import { db } from '@/lib/db';
 import { generateSignedUnsubscribeToken } from '@/lib/utils/crypto';
-import { EmailMessage, EmailTemplate } from '@/types/crm';
+import { EmailMessage, EmailTemplate, Contact } from '@/types/crm';
 
 export class EmailService {
   private static UNSUBSCRIBE_SECRET = process.env.UNSUBSCRIBE_SECRET || 'pracpathways_email_secret_2026';

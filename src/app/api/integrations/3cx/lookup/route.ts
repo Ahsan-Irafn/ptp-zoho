@@ -138,8 +138,8 @@ export async function GET(req: NextRequest) {
       contact_url: `${appUrl}/contacts/${c.id}`,
       assigned_agent: assignedAgent ? assignedAgent.full_name : 'Unassigned',
       course_interest: c.course_interest || '',
-      lifecycle_stage: c.lifecycle_stage,
-      lead_status: c.lead_status,
+      lifecycle_stage: c.lifecycle_stage || c.lifecycle_status,
+      lead_status: c.lead_status || 'new',
       do_not_call: c.do_not_call || false,
     };
   });
